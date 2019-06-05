@@ -1,6 +1,7 @@
 #include <GL/glew.h>
 #define SDL_MAIN_HANDLED
-#include <SDL.h>
+#include <Arbiter/Framework/Framework.hpp>
+#include <Arbiter/Core/Logger/Logger.hpp>
 #include <stdio.h>
 
 #define WINDOW_WIDTH 640

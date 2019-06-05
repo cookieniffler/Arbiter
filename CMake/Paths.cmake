@@ -1,6 +1,9 @@
 set(EXTERNAL_HEADERS "${CMAKE_SOURCE_DIR}/External/include")
 include_directories(${EXTERNAL_HEADERS}/sdl2)
 include_directories(${EXTERNAL_HEADERS}/glew)
+include_directories(${EXTERNAL_HEADERS}/nlohmann)
+# include_directories(${EXTERNAL_HEADERS}/blas)
+# include_directories(${EXTERNAL_HEADERS}/suitesparse)
 
 if(TARGET_PLATFORM_WINDOWS AND (TARGET_COMPILER_MSVC OR TARGET_COMPILER_CLANG))
 	set(PLATFORM "windows")

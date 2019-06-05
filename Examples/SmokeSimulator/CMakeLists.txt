@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.10 FATAL_ERROR)
-project(Cubes VERSION 0.0.1 LANGUAGES CXX)
+project(SmokeSimulator VERSION 0.01 LANGUAGES CXX)
 
 find_package(OpenGL REQUIRED)
 add_executable(${PROJECT_NAME} main.cpp)
@@ -9,6 +9,4 @@ target_link_libraries(${PROJECT_NAME}
 	optimized ${LIB_RELEASE}/SDL2.lib
 	optimized ${LIB_RELEASE}/SDL2main.lib
 	optimized ${LIB_RELEASE}/glew32.lib
-	# optimized ArbiterCore
-	# optimized ArbiterFramework
 )

@@ -1,5 +1,1 @@
-add_subdirectory(AIModule)
-add_subdirectory(Core)
-add_subdirectory(Geometry)
-add_subdirectory(Graphics)
-add_subdirectory(Framework)
+add_subdirectory(Arbiter)

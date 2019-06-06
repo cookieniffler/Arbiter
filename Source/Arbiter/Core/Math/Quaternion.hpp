@@ -10,34 +10,34 @@ private:
 	A q[4];
 
 public:
-	quaternion(A a);
-	quaternion(A w, A x, A y, A z);
-	quaternion(const quaternion& q);
-	virtual ~quaternion() = default; 
+	quaternion(A a) {}
+	quaternion(A w, A x, A y, A z) {}
+	quaternion(const quaternion& q) {}
+	virtual ~quaternion() = default {} 
 
-	inline A w() const;
-	inline A x() const;
-	inline A y() const;
-	inline A z() const;
+	inline A w() const {}
+	inline A x() const {}
+	inline A y() const {}
+	inline A z() const {}
 
-	inline A operator[](int i);
-	inline quaternion operator+(const quaternion &q);
-	inline quaternion operator-(const quaternion &q);
-	inline quaternion operator*(const quaternion &q);
-	inline quaternion operator/(const quaternion &q);
-	inline quaternion operator+=(const quaternion &q);
-	inline quaternion operator-=(const quaternion &q);
-	inline quaternion operator*=(const quaternion &q);
-	inline quaternion operator/=(const quaternion &q);
-	inline quaternion operator+(const B b);
-	inline quaternion operator-(const B b);
-	inline quaternion operator*(const B b);
-	inline quaternion operator/(const B b);
-	inline quaternion operator+=(const B b);
-	inline quaternion operator-=(const B b);
-	inline quaternion operator*=(const B b);
-	inline quaternion operator/=(const B b);
-	std::ostream& operator<< (std::ostream& os, const quaternion& q);
+	inline A operator[](int i) {}
+	inline quaternion operator+(const quaternion &q) {}
+	inline quaternion operator-(const quaternion &q) {}
+	inline quaternion operator*(const quaternion &q) {}
+	inline quaternion operator/(const quaternion &q) {}
+	inline quaternion operator+=(const quaternion &q) {}
+	inline quaternion operator-=(const quaternion &q) {}
+	inline quaternion operator*=(const quaternion &q) {}
+	inline quaternion operator/=(const quaternion &q) {}
+	inline quaternion operator+(const B b) {}
+	inline quaternion operator-(const B b) {}
+	inline quaternion operator*(const B b) {}
+	inline quaternion operator/(const B b) {}
+	inline quaternion operator+=(const B b) {}
+	inline quaternion operator-=(const B b) {}
+	inline quaternion operator*=(const B b) {}
+	inline quaternion operator/=(const B b) {}
+	std::ostream& operator<< (std::ostream& os, const quaternion& q) {}
 
 };
 

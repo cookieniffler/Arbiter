@@ -1,13 +1,15 @@
 #ifndef __MATRIX_HPP__
 #define __MATRIX_HPP__
 
+#include <cstdint>
+
 namespace Arbiter {
 
-template <typename A, typename B>
+template <typename M>
 class mat3x3
 {
 private:
-	m[9];
+	M m[9];
 
 public:
 	mat3x3();
@@ -15,11 +17,11 @@ public:
 	
 };
 
-template <typename A, typename B>
+template <typename M>
 class mat4x4
 {
 private:
-	m[16];
+	M m[16];
 
 public:
 	mat4x4();

@@ -9,6 +9,6 @@ target_link_libraries(${PROJECT_NAME}
 	optimized ${LIB_RELEASE}/SDL2.lib
 	optimized ${LIB_RELEASE}/SDL2main.lib
 	optimized ${LIB_RELEASE}/glew32.lib
-	# optimized ArbiterCore
-	# optimized ArbiterFramework
+	optimized ArbiterCore
+	optimized ArbiterFramework
 )

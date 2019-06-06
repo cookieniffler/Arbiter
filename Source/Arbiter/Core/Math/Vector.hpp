@@ -1,6 +1,8 @@
 #ifndef __VECTOR_HPP__
 #define __VECTOR_HPP__
 
+#include <ostream>
+
 namespace Arbiter {
 
 template <typename A, typename B>
@@ -10,51 +12,51 @@ private:
 	A v[2];
 
 public:
-	vec2(A t);
-	vec2(A x, A y);
-	vec2(const vec2& v);
-	virtual ~vec2() = default;
+	vec2(A t = 0.0f) {}
+	vec2(A x, A y) {}
+	vec2(const vec2& v) {}
+	virtual ~vec2() = default {}
 
-	inline A x() const;
-	inline A y() const;
+	inline A x() const {}
+	inline A y() const {}
 
-	inline A operator[](int i);
-	inline vec2 operator+(const vec2 &v);
-	inline vec2 operator-(const vec2 &v);
-	inline vec2 operator*(const vec2 &v);
-	inline vec2 operator/(const vec2 &v);
-	inline vec2 operator+=(const vec2 &v);
-	inline vec2 operator-=(const vec2 &v);
-	inline vec2 operator*=(const vec2 &v);
-	inline vec2 operator/=(const vec2 &v);
-	inline vec2 operator+(const B b);
-	inline vec2 operator-(const B b);
-	inline vec2 operator*(const B b);
-	inline vec2 operator/(const B b);
-	inline vec2 operator+=(const B b);
-	inline vec2 operator-=(const B b);
-	inline vec2 operator*=(const B b);
-	inline vec2 operator/=(const B b);
-	std::ostream& operator<< (std::ostream& os, const vec2& v);
+	inline A operator[](int i) {}
+	inline vec2 operator+(const vec2 &v) {}
+	inline vec2 operator-(const vec2 &v) {}
+	inline vec2 operator*(const vec2 &v) {}
+	inline vec2 operator/(const vec2 &v) {}
+	inline vec2 operator+=(const vec2 &v) {}
+	inline vec2 operator-=(const vec2 &v) {}
+	inline vec2 operator*=(const vec2 &v) {}
+	inline vec2 operator/=(const vec2 &v) {}
+	inline vec2 operator+(const B b) {}
+	inline vec2 operator-(const B b) {}
+	inline vec2 operator*(const B b) {}
+	inline vec2 operator/(const B b) {}
+	inline vec2 operator+=(const B b) {}
+	inline vec2 operator-=(const B b) {}
+	inline vec2 operator*=(const B b) {}
+	inline vec2 operator/=(const B b) {}
+	std::ostream& operator<< (std::ostream& os, const vec2& v) {}
 
-	inline double dot(const vec2& u, const vec2& v);
-	inline vec2 cross(const vec2& u, const vec2& v);
-	inline double norm(void) const;
-	inline double norm2(void) const;
-	inline vec2 unit(void) const;
-	inline void normalize(void);
-	inline vec2 abs(void) const; 
+	inline double dot(const vec2& u, const vec2& v) {}
+	inline vec2 cross(const vec2& u, const vec2& v) {}
+	inline double norm(void) const {}
+	inline double norm2(void) const {}
+	inline vec2 unit(void) const {}
+	inline void normalize(void) {}
+	inline vec2 abs(void) const {} 
 	
 };
 
-template <typename A, typename B>
+template <typename A, typename B = A>
 class vec3
 {
 private:
 	A v[3];
 
 public:
-	vec3(A a);
+	vec3(A a = 0.0f);
 	vec3(A x, A y, A z);
 	vec3(const vec3& v);
 	virtual ~vec3() = default;
@@ -95,14 +97,14 @@ public:
 
 };
 
-template <typename A, typename B>
+template <typename A, typename B = A>
 class vec4
 {
 private:
 	A v[4];
 
 public:
-	vec4(A t);
+	vec4(A t = 0.0f);
 	vec4(A x, A y, A z, A w);
 	vec4(const vec4& v);
 	virtual ~vec4() = default;

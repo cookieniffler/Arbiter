@@ -1,0 +1,16 @@
+if(TARGET_PLATFORM_WINDOWS)
+	set(EXTERNAL_HEADERS "${CMAKE_SOURCE_DIR}/External/include")
+	include_directories(${EXTERNAL_HEADERS}/sdl2)
+	include_directories(${EXTERNAL_HEADERS}/glew)
+	include_directories(${EXTERNAL_HEADERS}/nlohmann)
+	include_directories(${EXTERNAL_HEADERS}/blas)
+	include_directories(${EXTERNAL_HEADERS}/suitesparse)
+endif()
+
+
+if(TARGET_PLATFORM_LINUX)
+	find_package(SDL2 REQUIRED)
+	include_directories(${SDL2_INCLUDE_DIR})
+	find_package(GLEW REQUIRED)
+	include_directories(${GLEW_INCLUDE_DIRS})
+endif()

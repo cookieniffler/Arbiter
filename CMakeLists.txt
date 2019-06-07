@@ -9,6 +9,7 @@ include(CMake/Arbiter.cmake)
 include(CMake/Platform.cmake)
 include(CMake/Paths.cmake)
 include(CMake/Runtime.cmake)
+include(CMake/Libraries.cmake)
 
 arbiter_init()
 

@@ -7,10 +7,10 @@
 
 namespace Arbiter {
 
-	bool     OpenglInit(const char* glsl_version = nullptr);
-	void     OpenglShutdown();
-	void     OpenglNewFrame();
-	void     OpenglRenderDrawData(/*ImDrawData* draw_data*/);
+bool OpenglInit(const char* glsl_version = nullptr);
+void OpenglShutdown();
+void OpenglNewFrame();
+void OpenglRenderDrawData(/*ImDrawData* draw_data*/);
 
 } // Arbiter
 

@@ -3,7 +3,13 @@
 
 namespace Arbiter {
 
+class RaytracerRenderer : public Renderer {
+private:
+public:
+    RaytracerRenderer();
+    virtual ~RaytracerRenderer() = default;
 
+};
 
 } // Arbiter
 

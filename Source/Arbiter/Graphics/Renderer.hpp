@@ -3,7 +3,7 @@
 
 namespace Arbiter {
 
-class Renderer {
+class Renderer : std::enable_shared_from_this<Renderer> {
 private:
 public:
 	Renderer();

@@ -3,7 +3,7 @@
 
 namespace Arbiter {
     
-class PersepectiveCamera {
+class PersepectiveCamera : public Camera {
 private:
 public:
     PersepectiveCamera();

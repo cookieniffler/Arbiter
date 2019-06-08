@@ -3,7 +3,7 @@
 
 namespace Arbiter {
     
-class OrthographicCamera {
+class OrthographicCamera : public Camera {
 private:
 public:
     OrthographicCamera();

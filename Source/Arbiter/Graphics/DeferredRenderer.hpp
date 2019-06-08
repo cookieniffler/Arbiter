@@ -7,7 +7,7 @@ class DeferredRenderer : public Renderer
 {
 public:
 	DeferredRenderer();
-	~DeferredRenderer();
+	virtual ~DeferredRenderer() = default;
 	
 };
 

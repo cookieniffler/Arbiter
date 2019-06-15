@@ -3,10 +3,10 @@
 
 #include <Arbiter/Core/Arbiter.hpp>
 #include <Arbiter/Framework/Scene.hpp>
-#include <Arbiter/Graphics/Camera.hpp>
+#include <Arbiter/Graphics/Engine/Camera.hpp>
 #include <Arbiter/Framework/Application.hpp>
-#include <Arbiter/Graphics/ForwardRenderer.hpp>
-#include <Arbiter/Graphics/DeferredRenderer.hpp>
+#include <Arbiter/Graphics/Engine/ForwardRenderer.hpp>
+#include <Arbiter/Graphics/Engine/DeferredRenderer.hpp>
 
 class Cubes : public Arbiter::Application {
 private:

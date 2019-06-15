@@ -4,7 +4,7 @@
 #define SDL_MAIN_HANDLED
 #include <Arbiter/Framework/Framework.hpp>
 #include <Arbiter/Framework/Application.hpp>
-#include <Arbiter/Graphics/Renderer.hpp>
+#include <Arbiter/Graphics/Engine/Renderer.hpp>
 #include "cubes.hpp"
 
 #define WINDOW_WIDTH 640

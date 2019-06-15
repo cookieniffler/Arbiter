@@ -3,9 +3,10 @@
 
 #include <Arbiter/Core/Arbiter.hpp>
 #include <Arbiter/Framework/Scene.hpp>
-#include <Arbiter/Graphics/Camera.hpp>
+#include <Arbiter/Graphics/Engine/Camera.hpp>
 #include <Arbiter/Framework/Application.hpp>
-#include <Arbiter/Graphics/RaytracerRenderer.hpp>
+#include <Arbiter/Graphics/Engine/RaytracerRenderer.hpp>
+#include <Arbiter/Graphics/API/Opengl/GraphicsApi.hpp>
 
 class SmokeSimulator : public Arbiter::Application {
 private:

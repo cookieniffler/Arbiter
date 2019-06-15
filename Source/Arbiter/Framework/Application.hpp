@@ -3,8 +3,8 @@
 
 #include <memory>
 #include <Arbiter/Framework/Scene.hpp>
-#include <Arbiter/Graphics/Renderer.hpp>
-#include <Arbiter/Graphics/Camera.hpp>
+#include <Arbiter/Graphics/Engine/Renderer.hpp>
+#include <Arbiter/Graphics/Engine/Camera.hpp>
 
 namespace Arbiter {
 

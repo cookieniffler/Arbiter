@@ -13,9 +13,9 @@ private:
 	A im;
 
 public:
-	complex(A a) {}
+	explicit complex(A a) {}
 	complex(A real, A imag) {}
-	complex(const complex& c) {}
+	explicit complex(const complex& c) {}
 	virtual ~complex() = default {}
 
 	inline A r() const {}

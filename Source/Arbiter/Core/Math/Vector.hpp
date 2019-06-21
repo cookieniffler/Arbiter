@@ -12,9 +12,9 @@ private:
 	A v[2];
 
 public:
-	vec2(A t = 0.0f) {}
+	explicit vec2(A t = 0.0f) {}
 	vec2(A x, A y) {}
-	vec2(const vec2& v) {}
+	explicit vec2(const vec2& v) {}
 	virtual ~vec2() = default {}
 
 	inline A x() const {}
@@ -56,9 +56,9 @@ private:
 	A v[3];
 
 public:
-	vec3(A a = 0.0f);
+	explicit vec3(A a = 0.0f);
 	vec3(A x, A y, A z);
-	vec3(const vec3& v);
+	explicit vec3(const vec3& v);
 	virtual ~vec3() = default;
 
 	inline A x() const;
@@ -104,9 +104,9 @@ private:
 	A v[4];
 
 public:
-	vec4(A t = 0.0f);
+	explicit vec4(A t = 0.0f);
 	vec4(A x, A y, A z, A w);
-	vec4(const vec4& v);
+	explicit vec4(const vec4& v);
 	virtual ~vec4() = default;
 
 	inline A x() const;

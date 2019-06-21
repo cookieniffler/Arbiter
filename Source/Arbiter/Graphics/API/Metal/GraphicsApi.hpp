@@ -4,7 +4,7 @@
 #include <memory>
 
 namespace Arbiter {
-namespace Opengl {
+namespace Metal {
 
 class GraphicsApi : std::enable_shared_from_this<GraphicsApi> {
 private:
@@ -14,7 +14,7 @@ public:
 
 };
 
-} // Opengl
+} // Metal
 } // Arbiter
 
 #endif  // __GRAPHICSAPI_HPP__

@@ -12,7 +12,7 @@ private:
 	M m[9];
 
 public:
-	mat3x3();
+	explicit mat3x3();
 	virtual ~mat3x3() = default; 
 	
 };
@@ -24,7 +24,7 @@ private:
 	M m[16];
 
 public:
-	mat4x4();
+	explicit mat4x4();
 	virtual ~mat4x4() = default; 
 	
 };

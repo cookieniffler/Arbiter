@@ -10,9 +10,9 @@ private:
 	A q[4];
 
 public:
-	quaternion(A a) {}
+	explicit quaternion(A a) {}
 	quaternion(A w, A x, A y, A z) {}
-	quaternion(const quaternion& q) {}
+	explicit quaternion(const quaternion& q) {}
 	virtual ~quaternion() = default {} 
 
 	inline A w() const {}

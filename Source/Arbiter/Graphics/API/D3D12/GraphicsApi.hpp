@@ -4,7 +4,7 @@
 #include <memory>
 
 namespace Arbiter {
-namespace Opengl {
+namespace D3D12 {
 
 class GraphicsApi : std::enable_shared_from_this<GraphicsApi> {
 private:
@@ -14,7 +14,6 @@ public:
 
 };
 
-} // Opengl
+} // D3D12
 } // Arbiter
-
 #endif  // __GRAPHICSAPI_HPP__

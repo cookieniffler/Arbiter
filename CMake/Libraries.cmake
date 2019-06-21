@@ -9,8 +9,10 @@ endif()
 
 
 if(TARGET_PLATFORM_LINUX)
+	set(EXTERNAL_HEADERS "${CMAKE_SOURCE_DIR}/External/include")
 	find_package(SDL2 REQUIRED)
 	include_directories(${SDL2_INCLUDE_DIR})
 	find_package(GLEW REQUIRED)
 	include_directories(${GLEW_INCLUDE_DIRS})
+	include_directories(${EXTERNAL_HEADERS}/nlohmann)
 endif()

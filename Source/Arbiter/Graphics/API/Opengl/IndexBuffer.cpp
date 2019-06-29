@@ -1,4 +1,4 @@
-#include "GraphicsApi.hpp"
+#include "IndexBuffer.hpp"
 
 namespace Arbiter {
 namespace Opengl {

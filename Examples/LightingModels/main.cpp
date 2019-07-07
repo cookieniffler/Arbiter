@@ -6,7 +6,7 @@
 #include <Arbiter/Framework/Framework.hpp>
 #include <Arbiter/Framework/Application.hpp>
 #include <Arbiter/Graphics/Engine/Renderer.hpp>
-#include "cubes.hpp"
+#include "lighting.hpp"
 
 #define WINDOW_WIDTH 640
 #define WINDOW_HEIGHT 480
@@ -14,7 +14,7 @@
 int main(int argc, char const *argv[])
 {
 	std::unique_ptr<Arbiter::Application> app = 
-		Cubes::CreateApplication(Cubes::CreateScene(), Cubes::CreateCamera());
+		Lighting::CreateApplication(Lighting::CreateScene(), Lighting::CreateCamera());
 	if (!app) {
 		std::cerr << "ERROR: Created application is not valid." << std::endl;
 		return 1;

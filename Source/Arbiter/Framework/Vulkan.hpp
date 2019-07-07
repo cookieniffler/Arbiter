@@ -3,10 +3,10 @@
 
 namespace Arbiter {
 
-	bool VulkanInit(const char* glsl_version = nullptr);
-	void VulkanShutdown();
-	void VulkanNewFrame();
-	void VulkanRenderDrawData(/*ImDrawData* draw_data*/);
+bool VulkanInit(const char* glsl_version = nullptr);
+void VulkanShutdown();
+void VulkanNewFrame();
+void VulkanRenderDrawData(/*ImDrawData* draw_data*/);
 
 } // Arbiter
 

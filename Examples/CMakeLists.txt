@@ -1,2 +1,3 @@
 add_subdirectory(Cubes)
+add_subdirectory(LightingModels)
 add_subdirectory(SmokeSimulator)

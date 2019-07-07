@@ -19,11 +19,12 @@ protected:
 	std::shared_ptr<class Camera> camera;
 
 public:
-    Application();
-    virtual ~Application() = default;
-    
+  Application();
+	Application(std::shared_ptr<Scene> scene, std::shared_ptr<Camera> camera);
+  virtual ~Application() = default;
+
 	virtual void Initialize();
-	static std::unique_ptr<Application> CreateApplication(std::shared_ptr<Scene> scene, 
+	static std::unique_ptr<Application> CreateApplication(std::shared_ptr<Scene> scene,
 		std::shared_ptr<Camera> camera);
 	static std::shared_ptr<Scene> CreateScene();
 	static std::shared_ptr<Camera> CreateCamera();

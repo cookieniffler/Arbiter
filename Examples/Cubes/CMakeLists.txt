@@ -2,7 +2,7 @@ cmake_minimum_required(VERSION 3.10 FATAL_ERROR)
 project(Cubes VERSION 0.0.1 LANGUAGES CXX)
 
 find_package(OpenGL REQUIRED)
-add_executable(${PROJECT_NAME} main.cpp)
+add_executable(${PROJECT_NAME} main.cpp cubes.hpp)
 target_include_directories(${PROJECT_NAME} PRIVATE ${CMAKE_SOURCE_DIR}/Source)
 if (CMAKE_SYSTEM_NAME MATCHES "Windows")
 	target_link_libraries(${PROJECT_NAME}

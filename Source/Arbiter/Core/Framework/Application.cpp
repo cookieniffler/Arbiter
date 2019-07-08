@@ -3,6 +3,7 @@
 namespace Arbiter {
 
 Application::Application() {}
+Application::Application(std::shared_ptr<Scene> scene, std::shared_ptr<Camera> camera) {}
 void Application::Initialize() {}
 std::unique_ptr<Application> Application::CreateApplication(std::shared_ptr<Scene> scene,
 	std::shared_ptr<Camera> camera) { return std::unique_ptr<Application>(); }

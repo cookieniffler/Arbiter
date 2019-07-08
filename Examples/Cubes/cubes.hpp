@@ -19,7 +19,7 @@ public:
 	Cubes(std::shared_ptr<Arbiter::Scene> scene, std::shared_ptr<Arbiter::Camera> camera) {}
 	static std::unique_ptr<Arbiter::Application> CreateApplication(std::shared_ptr<Arbiter::Scene> scene,
 		std::shared_ptr<Arbiter::Camera> camera) { return std::make_unique<Arbiter::Application>(scene, camera); }
-
+	std::unique_ptr<Arbiter::Renderer> CreateRenderer() { return std::make_unique<Arbiter::DeferredRenderer>(); }
 };
 
 #endif // __CUBES_HPP__

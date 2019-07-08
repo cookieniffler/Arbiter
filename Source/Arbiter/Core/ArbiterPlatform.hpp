@@ -1,13 +1,13 @@
 #ifndef __ARBITER_HPP__
 #define __ARBITER_HPP__
 
-
-#ifndef ARBITER_API
-#define ARBITER_API
-#endif
+namespace Arbiter {
 
 #define ARBITER_VERSION "0.01"
 #define ARBITER_VERSION_NUM 0.01
 
 
-#endif  // __ARBITER_HPP__ 
+
+}
+
+#endif  // __ARBITER_HPP__

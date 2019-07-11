@@ -1,6 +1,6 @@
 # Create defines based on platform
-if (CMAKE_SYSTEM_NAME MATCHES "Windows") 
-	set(TARGET_PLATFORM_WINDOWS 1) 
+if (CMAKE_SYSTEM_NAME MATCHES "Windows")
+	set(TARGET_PLATFORM_WINDOWS 1)
 	set(TARGET_PLATFORM "windows")
 elseif (CMAKE_SYSTEM_NAME MATCHES "Linux")
 	set(TARGET_PLATFORM_LINUX 1)
@@ -32,3 +32,6 @@ elseif (CMAKE_CXX_COMPILER_ID MATCHES "Clang")
 elseif (CMAKE_CXX_COMPILER_ID MATCHES "GNU")
 	set(TARGET_COMPILER_GCC 1)
 endif()
+
+message(STATUS "Platform information : " ${TARGET_PLATFORM} " " ${TARGET_ARCH_NAME})
+message(STATUS "Compiler : " ${CMAKE_CXX_COMPILER_ID})

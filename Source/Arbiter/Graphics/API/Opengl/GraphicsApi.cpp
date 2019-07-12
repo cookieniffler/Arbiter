@@ -1,9 +1,7 @@
-#include "GraphicsApi.hpp"
+#include <Arbiter/Graphics/Opengl/GraphicsApi.hpp>
 
-namespace Arbiter {
-namespace Opengl {
+ARBITER_NAMESPACE_BEGIN
+OPENGL_NAMESPACE_BEGIN
 
-
-
-} // Opengl
-} // Arbiter
+OPENGL_NAMESPACE_END
+ARBITER_NAMESPACE_BEGIN

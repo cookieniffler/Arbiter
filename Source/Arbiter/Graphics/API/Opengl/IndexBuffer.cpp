@@ -1,9 +1,7 @@
-#include "IndexBuffer.hpp"
+#include <Arbiter/Graphics/API/Opengl/IndexBuffer.hpp>
 
-namespace Arbiter {
-namespace Opengl {
+ARBITER_NAMESPACE_BEGIN
+OPENGL_NAMESPACE_BEGIN
 
-
-
-} // Opengl
-} // Arbiter
+OPENGL_NAMESPACE_END
+ARBITER_NAMESPACE_END

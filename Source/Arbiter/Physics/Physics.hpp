@@ -1,8 +1,11 @@
+#pragma once
 #ifndef __PHYSICS_HPP__
 #define __PHYSICS_HPP__
 
-namespace Arbiter {
+#include <Arbiter/Core/Common/Base.hpp>
 
-} // Arbiter
+ARBITER_NAMESPACE_BEGIN
+
+ARBITER_NAMESPACE_END
 
 #endif  // __PHYSICS_HPP__

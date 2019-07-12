@@ -3,6 +3,7 @@
 #define __REALTIMERAYTRACERRENDERER_HPP__
 
 #include <Arbiter/Core/Common/Base.hpp>
+#include <Arbiter/Graphics/Engine/Renderer.hpp>
 
 ARBITER_NAMESPACE_BEGIN
 

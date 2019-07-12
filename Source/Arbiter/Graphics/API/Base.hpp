@@ -1,16 +1,18 @@
+#pragma once
 #ifndef __BASE_HPP__
 #define __BASE_HPP__
 
+#include <Arbiter/Core/Common/Base.hpp>
 #if defined(_WIN32)
-#include "D3D12/GraphicsApi.hpp"
+#include <Arbiter/Graphics/API/D3D12/GraphicsApi.hpp>
 #elif defined(linux)
-#include "Opengl/GraphicsApi.hpp"
+#include <Arbiter/Graphics/API/Opengl/GraphicsApi.hpp>
 #elif defined(__APPLE__)
-#include "Metal/GraphicsApi.hpp"
+#include <Arbiter/Graphics/API/Metal/GraphicsApi.hpp>
 #endif
 
-namespace Arbiter {
+ARBITER_NAMESPACE_BEGIN
 
-} // Arbiter
+ARBITER_NAMESPACE_END
 
 #endif  // __BASE_HPP__

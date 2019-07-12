@@ -1,20 +1,22 @@
+#pragma once
 #ifndef __VERTEXARRAY_HPP__
 #define __VERTEXARRAY_HPP__
 
 #include <memory>
+#include <Arbiter/Core/Common/Base.hpp>
 
-namespace Arbiter {
-namespace Opengl {
+ARBITER_NAMESPACE_BEGIN
+OPENGL_NAMESPACE_BEGIN
 
 class VertexArray : public std::enable_shared_from_this<VertexArray> {
 private:
 public:
 	VertexArray();
 	virtual ~VertexArray() = default;
-	
+
 };
 
-} // Opengl
-} // Arbiter
+OPENGL_NAMESPACE_END
+ARBITER_NAMESPACE_END
 
 #endif  // __VERTEXARRAY_HPP__

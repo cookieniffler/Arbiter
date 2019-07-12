@@ -1,10 +1,12 @@
+#pragma once
 #ifndef __GRAPHICSAPI_HPP__
 #define __GRAPHICSAPI_HPP__
 
 #include <memory>
+#include <Arbiter/Core/Common/Base.h>
 
-namespace Arbiter {
-namespace D3D12 {
+ARBITER_NAMESPACE_BEGIN
+D3D12_NAMESPACE_BEGIN
 
 class GraphicsApi : std::enable_shared_from_this<GraphicsApi> {
 private:
@@ -14,6 +16,7 @@ public:
 
 };
 
-} // D3D12
-} // Arbiter
+D3D12_NAMESPACE_END
+ARBITER_NAMESPACE_END
+
 #endif  // __GRAPHICSAPI_HPP__

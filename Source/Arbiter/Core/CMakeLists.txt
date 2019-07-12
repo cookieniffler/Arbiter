@@ -4,6 +4,8 @@ set(library_name ArbiterCore)
 arbiter_add_sources(
 	Common/Base.hpp
 	Common/Platform.hpp
+	Containers/Containers.hpp
+	Diagnostics/Diagnostics.hpp
 	Framework/Application.hpp
 	Framework/Application.cpp
 	Framework/ApplicationContextSDL.hpp
@@ -26,6 +28,9 @@ arbiter_add_sources(
 	Math/Utility.hpp
 	Math/Utility.cpp
 	Math/Vector.hpp
+	Memory/Memory.hpp
+	Parser/Parser.hpp
+	Threading/Threading.hpp
 )
 arbiter_add_library(${library_name} STATIC)
 set_target_properties(${library_name} PROPERTIES LINKER_LANGUAGE CXX)

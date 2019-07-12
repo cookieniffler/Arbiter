@@ -1,3 +1,4 @@
+#pragma once
 #ifndef __FORWARDRENDERER_HPP__
 #define __FORWARDRENDERER_HPP__
 
@@ -11,7 +12,7 @@ private:
 public:
     ForwardRenderer();
     virtual ~ForwardRenderer() = default;
-    
+
 };
 
 ARBITER_NAMESPACE_END

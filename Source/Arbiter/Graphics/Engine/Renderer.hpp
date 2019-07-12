@@ -1,7 +1,10 @@
+#pragma once
 #ifndef __RENDERER_HPP__
 #define __RENDERER_HPP__
 
-namespace Arbiter {
+#include <Arbiter/Core/Common/Base.hpp>
+
+ARBITER_NAMESPACE_BEGIN
 
 class Renderer : std::enable_shared_from_this<Renderer> {
 private:
@@ -11,6 +14,6 @@ public:
 
 };
 
-} // Arbiter
+ARBITER_NAMESPACE_END
 
 #endif  // __RENDERER_HPP__

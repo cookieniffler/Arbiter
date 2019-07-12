@@ -1,16 +1,19 @@
+#pragma once
 #ifndef __DEFERRED_RENDERER_HPP__
 #define __DEFERRED_RENDERER_HPP__
 
-namespace Arbiter {
+#include <Arbiter/Core/Common/Base.hpp>
+
+ARBITER_NAMESPACE_BEGIN
 
 class DeferredRenderer : public Renderer
 {
 public:
 	DeferredRenderer();
 	virtual ~DeferredRenderer() = default;
-	
+
 };
 
-} // Arbiter
+ARBITER_NAMESPACE_END
 
 #endif  // __DEFERRED_RENDERER_HPP__

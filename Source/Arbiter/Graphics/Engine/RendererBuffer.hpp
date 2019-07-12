@@ -1,9 +1,11 @@
+#pragma once
 #ifndef __RENDERERBUFFER_HPP__
 #define __RENDERERBUFFER_HPP__
 
 #include <memory>
+#include <Arbiter/Core/Common/Base.hpp>
 
-namespace Arbiter {
+ARBITER_NAMESPACE_BEGIN
 
 class RendererBuffer : std::enable_shared_from_this<RendererBuffer>
 {
@@ -14,6 +16,6 @@ public:
 
 };
 
-}
+ARBITER_NAMESPACE_END
 
 #endif // __RENDERERBUFFER_HPP__

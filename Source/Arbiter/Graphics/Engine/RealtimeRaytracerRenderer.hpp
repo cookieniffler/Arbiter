@@ -1,7 +1,10 @@
+#pragma once
 #ifndef __REALTIMERAYTRACERRENDERER_HPP__
 #define __REALTIMERAYTRACERRENDERER_HPP__
 
-namespace Arbiter {
+#include <Arbiter/Core/Common/Base.hpp>
+
+ARBITER_NAMESPACE_BEGIN
 
 class RealtimeRaytracerRenderer : public Renderer {
 private:
@@ -11,6 +14,6 @@ public:
 
 };
 
-} // Arbiter
+ARBITER_NAMESPACE_END
 
 #endif  // __REALTIMERAYTRACERRENDERER_HPP__

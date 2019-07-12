@@ -1,7 +1,5 @@
-#include "RaytracerRenderer.hpp"
+#include <Arbiter/Graphics/Engine/RaytracerRenderer.hpp>
 
-namespace Arbiter {
+ARBITER_NAMESPACE_BEGIN
 
-
-
-} // Arbiter
+ARBITER_NAMESPACE_END

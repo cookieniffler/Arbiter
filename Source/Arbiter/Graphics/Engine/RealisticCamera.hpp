@@ -1,10 +1,12 @@
+#pragma once
 #ifndef __REALISTICCAMERA_HPP__
 #define __REALISTICCAMERA_HPP__
 
-#include "Camera.h"
+#include <Arbiter/Core/Common/Base.hpp>
+#include <Arbiter/Graphics/Engine/Camera.hpp>
 
-namespace Arbiter {
-    
+ARBITER_NAMESPACE_BEGIN
+
 class RealisticCamera : public Camera {
 private:
 public:
@@ -13,6 +15,6 @@ public:
 
 };
 
-} // Arbiter
+ARBITER_NAMESPACE_END
 
 #endif  // __REALISTICCAMERA_HPP__

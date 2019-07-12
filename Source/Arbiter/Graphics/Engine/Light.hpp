@@ -1,9 +1,11 @@
+#pragma once
 #ifndef __LIGHT_HPP__
 #define __LIGHT_HPP__
 
 #include <memory>
+#include <Arbiter/Core/Common/Base.hpp>
 
-namespace Arbiter {
+ARBITER_NAMESPACE_BEGIN
 
 class Light : std::enable_shared_from_this<Light> {
 private:
@@ -14,6 +16,6 @@ public:
 
 };
 
-}
+ARBITER_NAMESPACE_END
 
 #endif // __LIGHT_HPP__

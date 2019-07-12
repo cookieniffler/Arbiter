@@ -1,5 +1,5 @@
-#include "Realistic.hpp"
+#include <Arbiter/Graphics/Engine/Realistic.hpp>
 
-namespace Arbiter {
-    
-} // Arbiter
+ARBITER_NAMESPACE_BEGIN
+
+ARBITER_NAMESPACE_END

@@ -1,5 +1,5 @@
-#include "Light.hpp"
+#include <Arbiter/Graphics/Engine/Light.hpp>
 
-namespace Arbiter {
+ARBITER_NAMESPACE_BEGIN
 
-}
+ARBITER_NAMESPACE_END

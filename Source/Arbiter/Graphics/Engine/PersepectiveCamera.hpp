@@ -1,8 +1,9 @@
+#pragma once
 #ifndef __PERSEPECTIVECAMERA_HPP__
 #define __PERSEPECTIVECAMERA_HPP__
 
-namespace Arbiter {
-    
+ARBITER_NAMESPACE_BEGIN
+
 class PersepectiveCamera : public Camera {
 private:
 public:
@@ -11,6 +12,6 @@ public:
 
 };
 
-} // Arbiter
+ARBITER_NAMESPACE_END
 
 #endif  // __PERSEPECTIVECAMERA_HPP__

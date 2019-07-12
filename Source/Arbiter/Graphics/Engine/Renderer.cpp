@@ -1,7 +1,5 @@
-#include "Renderer.hpp"
+#include <Arbiter/Graphics/Engine/Renderer.hpp>
 
-namespace Arbiter {
+ARBITER_NAMESPACE_BEGIN
 
-
-
-} // Arbiter
+ARBITER_NAMESPACE_END

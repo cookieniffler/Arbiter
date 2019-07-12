@@ -1,7 +1,5 @@
-#include "ForwardRenderer.hpp"
+#include <Arbiter/Graphics/Engine/ForwardRenderer.hpp>
 
-namespace Arbiter {
+ARBITER_NAMESPACE_BEGIN
 
-
-
-} // Arbiter
+ARBITER_NAMESPACE_END

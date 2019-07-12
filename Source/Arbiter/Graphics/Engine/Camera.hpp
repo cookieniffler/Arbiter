@@ -1,16 +1,19 @@
+#pragma once
 #ifndef __CAMERA_HPP__
 #define __CAMERA_HPP__
 
-namespace Arbiter {
-    
+#include <Arbiter/Core/Common/Base.hpp>
+
+ARBITER_NAMESPACE_BEGIN
+
 class Camera {
 private:
 public:
-    Camera();
-    virtual ~Camera() = default;
+  Camera();
+  virtual ~Camera() = default;
 
 };
 
-} // Arbiter
+ARBITER_NAMESPACE_END
 
 #endif  // __CAMERA_HPP__

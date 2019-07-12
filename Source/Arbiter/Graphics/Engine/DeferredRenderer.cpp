@@ -1,6 +1,5 @@
-#include "DeferredRenderer.hpp"
+#include <Arbiter/Graphics/Engine/DeferredRenderer.hpp>
 
-namespace Arbiter {
+ARBITER_NAMESPACE_BEGIN
 
-	
-}
+ARBITER_NAMESPACE_END

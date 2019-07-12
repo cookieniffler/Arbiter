@@ -12,6 +12,8 @@ arbiter_add_sources(
 	Framework/Scene.cpp
 	Framework/SceneBuffer.hpp
 	Framework/SceneBuffer.cpp
+	Framework/SceneManager.hpp
+	Framework/SceneManager.cpp
 	Graph/ComputationalGraph.hpp
 	Graph/ComputationalGraph.cpp
 	Logger/Logger.hpp

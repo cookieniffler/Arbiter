@@ -1,6 +1,7 @@
-#include "Application.hpp"
+#include <Arbiter/Core/Common/Base.hpp>
+#include <Arbiter/Core/Framework/Application.hpp>
 
-namespace Arbiter {
+ARBITER_NAMESPACE_BEGIN
 
 Application::Application() {}
 Application::Application(std::shared_ptr<Scene> scene, std::shared_ptr<Camera> camera) {}
@@ -16,4 +17,4 @@ void Application::Tick(double deltaTime) {}
 void Application::SetupScene() {}
 void Application::SetupCamera() {}
 
-} // Arbiter
+ARBITER_NAMESPACE_END

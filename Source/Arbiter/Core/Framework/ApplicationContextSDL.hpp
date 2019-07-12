@@ -1,9 +1,11 @@
+#pragma once
 #ifndef __SDL2SETUP_HPP__
 #define __SDL2SETUP_HPP__
 
 #include <SDL.h>
+#include <Arbiter/Core/Common/Base.hpp>
 
-namespace Arbiter {
+ARBITER_NAMESPACE_BEGIN
 
 struct SDL_Window;
 typedef union SDL_Event SDL_Event;
@@ -20,6 +22,6 @@ public:
 
 };
 
-} // Arbiter
+ARBITER_NAMESPACE_END
 
 #endif  // __APPLICATIONCONTEXTSDL_HPP__

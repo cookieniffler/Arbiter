@@ -1,9 +1,11 @@
+#pragma once
 #ifndef __VECTOR_HPP__
 #define __VECTOR_HPP__
 
 #include <ostream>
+#include <Arbiter/Core/Common/Base.h>
 
-namespace Arbiter {
+ARBITER_NAMESPACE_BEGIN
 
 template <typename A, typename B>
 class vec2
@@ -45,8 +47,8 @@ public:
 	inline double norm2(void) const {}
 	inline vec2 unit(void) const {}
 	inline void normalize(void) {}
-	inline vec2 abs(void) const {} 
-	
+	inline vec2 abs(void) const {}
+
 };
 
 template <typename A, typename B = A>
@@ -144,7 +146,7 @@ public:
 	inline vec4 unit(void) const;
 	inline void normalize(void);
 	inline vec4 abs(void) const;
-	
+
 };
 
 using vec2d = vec2<double>;
@@ -165,6 +167,6 @@ using vec4i = vec4<int32_t>;
 using vec4u = vec4<uint32_t>;
 using vec4b = vec4<bool>;
 
-} // Arbiter
+ARBITER_NAMESPACE_END
 
 #endif  // __VECTOR_HPP__

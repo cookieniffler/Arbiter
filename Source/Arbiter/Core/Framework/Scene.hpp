@@ -1,12 +1,14 @@
+#pragma once
 #ifndef __SCENE_HPP__
 #define __SCENE_HPP__
 
 #include <memory>
 #include <vector>
+#include <Arbiter/Core/Common/Base.hpp>
 #include <Arbiter/Core/Framework/SceneBuffer.hpp>
 #include <Arbiter/Graphics/Engine/Light.hpp>
 
-namespace Arbiter {
+ARBITER_NAMESPACE_BEGIN
 
 class Scene : public std::enable_shared_from_this<Scene> {
 private:
@@ -16,7 +18,7 @@ private:
 public:
     Scene();
     virtual ~Scene() = default;
-    
+
 	size_t GetObjectsCount() const;
 	size_t GetLightsCount() const;
 	template<typename T, typename std::enable_if<std::is_integral<T>::value>::type* = nullptr>
@@ -26,9 +28,9 @@ public:
 	void AddSceneBuffer(std::shared_ptr<SceneBuffer> object);
 	void AddLight(std::shared_ptr<Light> light);
 	void ClearScene();
-      
+
 };
 
-} // Arbiter
+ARBITER_NAMESPACE_END
 
 #endif  // __SCENE_HPP__

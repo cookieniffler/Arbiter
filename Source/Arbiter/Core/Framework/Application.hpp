@@ -1,3 +1,4 @@
+#pragma once
 #ifndef __APPLICATION_HPP__
 #define __APPLICATION_HPP__
 
@@ -6,7 +7,7 @@
 #include <Arbiter/Graphics/Engine/Renderer.hpp>
 #include <Arbiter/Graphics/Engine/Camera.hpp>
 
-namespace Arbiter {
+ARBITER_NAMESPACE_BEGIN
 
 class Application {
 private:
@@ -35,6 +36,6 @@ public:
 
 };
 
-} // Arbiter
+ARBITER_NAMESPACE_END
 
 #endif  // __APPLICATION_HPP__

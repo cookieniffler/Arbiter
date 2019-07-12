@@ -26,5 +26,8 @@ int main(int argc, char const *argv[])
 		return 1;
 	}
 
+	for(;;)
+		app->Tick(0);
+
 	return 0;
 }

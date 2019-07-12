@@ -1,6 +1,7 @@
-#include "Scene.hpp"
+#include <Arbiter/Core/Common/Base.hpp>
+#include <Arbiter/Core/Framework/Scene.hpp>
 
-namespace Arbiter {
+ARBITER_NAMESPACE_BEGIN
 
 Scene::Scene() {}
 size_t Scene::GetObjectsCount() const { return scene_objects.size(); }
@@ -13,4 +14,4 @@ void Scene::AddSceneBuffer(std::shared_ptr<SceneBuffer> object) {}
 void Scene::AddLight(std::shared_ptr<Light> light) {}
 void Scene::ClearScene() {}
 
-}
+ARBITER_NAMESPACE_END

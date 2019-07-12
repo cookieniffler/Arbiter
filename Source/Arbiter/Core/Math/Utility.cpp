@@ -1,5 +1,5 @@
-#include "Utility.hpp"
+#include <Arbiter/Core/Math/Utility.hpp>
 
-namespace Arbiter {
+ARBITER_NAMESPACE_BEGIN
 
-} // Arbiter
+ARBITER_NAMESPACE_END

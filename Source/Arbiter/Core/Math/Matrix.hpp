@@ -1,9 +1,11 @@
+#pragma once
 #ifndef __MATRIX_HPP__
 #define __MATRIX_HPP__
 
 #include <cstdint>
+#include <Arbiter/Core/Common/base.h>
 
-namespace Arbiter {
+ARBITER_NAMESPACE_BEGIN
 
 template <typename M>
 class mat3x3
@@ -13,8 +15,8 @@ private:
 
 public:
 	explicit mat3x3();
-	virtual ~mat3x3() = default; 
-	
+	virtual ~mat3x3() = default;
+
 };
 
 template <typename M>
@@ -25,8 +27,8 @@ private:
 
 public:
 	explicit mat4x4();
-	virtual ~mat4x4() = default; 
-	
+	virtual ~mat4x4() = default;
+
 };
 
 using mat3d = mat3x3<double>;
@@ -41,6 +43,6 @@ using mat4i = mat4x4<int32_t>;
 using mat4u = mat4x4<uint32_t>;
 using mat4b = mat4x4<bool>;
 
-} // Arbiter
+ARBITER_NAMESPACE_END
 
 #endif  // __MATRIX_HPP__

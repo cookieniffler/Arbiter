@@ -1,8 +1,11 @@
+#pragma once
 #ifndef __COMPUTATIONALGRAPH_HPP__
 #define __COMPUTATIONALGRAPH_HPP__
 
-namespace Arbiter {
+#include <Arbiter/Core/Graph/ComputationalGraph.hpp>
 
-} // Arbiter
+ARBITER_NAMESPACE_BEGIN
+
+ARBITER_NAMESPACE_END
 
 #endif  // __COMPUTATIONALGRAPH_HPP__

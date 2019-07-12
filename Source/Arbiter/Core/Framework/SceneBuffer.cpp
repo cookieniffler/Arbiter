@@ -1,5 +1,6 @@
-#include "SceneBuffer.hpp"
+#include <Arbiter/Core/Common/Base.hpp>
+#include <Arbiter/Core/Framework/SceneBuffer.hpp>
 
-namespace Arbiter {
+ARBITER_NAMESPACE_BEGIN
 
-}
+ARBITER_NAMESPACE_END

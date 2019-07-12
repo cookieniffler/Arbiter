@@ -1,9 +1,11 @@
+#pragma once
 #ifndef __COMPLEX_HPP__
 #define __COMPLEX_HPP__
 
 #include <ostream>
+#include <Arbiter/Core/Common/Base.h>
 
-namespace Arbiter {
+ARBITER_NAMESPACE_BEGIN
 
 template <typename A, typename B>
 class complex
@@ -42,11 +44,11 @@ public:
 	inline double norm(void) const {}
 	inline double norm2(void) const {}
 	inline complex unit(void) const {}
-	inline complex abs(void) const {} 
+	inline complex abs(void) const {}
 	inline complex exponential(void) const {}
-	
+
 };
 
-} // Arbiter
+ARBITER_NAMESPACE_END
 
 #endif  // __COMPLEX_HPP__

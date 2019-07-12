@@ -1,7 +1,10 @@
+#pramge once
 #ifndef __QUATERNION_HPP__
 #define __QUATERNION_HPP__
 
-namespace Arbiter {
+#include <Arbiter/Core/Common/Base.h>
+
+ARBITER_NAMESPACE_BEGIN
 
 template <typename A, typename B>
 class quaternion
@@ -13,7 +16,7 @@ public:
 	explicit quaternion(A a) {}
 	quaternion(A w, A x, A y, A z) {}
 	explicit quaternion(const quaternion& q) {}
-	virtual ~quaternion() = default {} 
+	virtual ~quaternion() = default {}
 
 	inline A w() const {}
 	inline A x() const {}
@@ -41,6 +44,6 @@ public:
 
 };
 
-} // Arbiter
+ARBITER_NAMESPACE_END
 
 #endif  // __QUATERNION_HPP__

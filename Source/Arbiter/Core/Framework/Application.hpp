@@ -2,7 +2,7 @@
 #define __APPLICATION_HPP__
 
 #include <memory>
-#include <Arbiter/Framework/Scene.hpp>
+#include <Arbiter/Core/Framework/Scene.hpp>
 #include <Arbiter/Graphics/Engine/Renderer.hpp>
 #include <Arbiter/Graphics/Engine/Camera.hpp>
 

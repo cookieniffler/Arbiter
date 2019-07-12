@@ -1,10 +1,9 @@
 #ifndef __SMOKESIMULATOR_HPP__
 #define __SMOKESIMULATOR_HPP__
 
-#include <Arbiter/Core/Arbiter.hpp>
-#include <Arbiter/Framework/Scene.hpp>
+#include <Arbiter/Core/Framework/Scene.hpp>
+#include <Arbiter/Core/Framework/Application.hpp>
 #include <Arbiter/Graphics/Engine/Camera.hpp>
-#include <Arbiter/Framework/Application.hpp>
 #include <Arbiter/Graphics/Engine/RaytracerRenderer.hpp>
 #include <Arbiter/Graphics/API/Opengl/GraphicsApi.hpp>
 

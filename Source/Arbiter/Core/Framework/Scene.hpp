@@ -3,7 +3,7 @@
 
 #include <memory>
 #include <vector>
-#include <Arbiter/Framework/SceneBuffer.hpp>
+#include <Arbiter/Core/Framework/SceneBuffer.hpp>
 #include <Arbiter/Graphics/Engine/Light.hpp>
 
 namespace Arbiter {

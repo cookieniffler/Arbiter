@@ -1,6 +1,6 @@
 #include <GL/glew.h>
 #define SDL_MAIN_HANDLED
-#include <Arbiter/Framework/Framework.hpp>
+#include <Arbiter/Core/Framework/Scene.hpp>
 #include <Arbiter/Core/Logger/Logger.hpp>
 #include <iostream>
 #include <stdio.h>

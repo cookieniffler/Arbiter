@@ -2,7 +2,8 @@ set(CMAKE_CXX_STANDARD 17)
 set(library_name ArbiterCore)
 
 arbiter_add_sources(
-	Common/ArbiterPlatform.hpp
+	Common/Base.hpp
+	Common/Platform.hpp
 	Framework/Application.hpp
 	Framework/Application.cpp
 	Framework/ApplicationContextSDL.hpp

@@ -3,8 +3,7 @@
 #include <GL/glew.h>
 #define SDL_MAIN_HANDLED
 #include <SDL.h>
-#include <Arbiter/Framework/Framework.hpp>
-#include <Arbiter/Framework/Application.hpp>
+#include <Arbiter/Core/Framework/Application.hpp>
 #include <Arbiter/Graphics/Engine/Renderer.hpp>
 #include "lighting.hpp"
 

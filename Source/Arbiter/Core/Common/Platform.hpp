@@ -4,6 +4,11 @@
 #ifndef ARBITER_VERSION
 #define ARBITER_VERSION "1.0.0"
 
+#define ARBITER_ENDIAN_LITTLE 1
+#define ARBITER_ENDIAN_BIG 2
+#define ARBITER_ARCHITECTURE_32 1
+#define ARBITER_ARCHITECTURE_64 2
+
 #if defined(_WIN64)
 #define ARBITER_PLATFORM_WINDOWS
 #endif
@@ -47,6 +52,23 @@ static_assert(false, "For clang compilers, use -std=c++17");
 static_assert(__cplusplus >= 201402L, "C++14 required.");
 #define ARBITER_CPP14
 #endif
+
+#if defined(__x86_64__) || defined(_M_X64) || defined(_M_AMD64) || defined(_M_ARM64) || defined(__powerpc64__) || defined(__alpha__) || defined(__ia64__) || defined(__s390__) || defined(__s390x__) || defined(__arm64__) || defined(__aarch64__) || defined(__mips64) || defined(__mips64_)
+#   define ARBITER_ARCH_TYPE ARBITER_ARCHITECTURE_64
+#else
+#   define ARBITER_ARCH_TYPE ARBITER_ARCHITECTURE_32
+#endif
+
+#ifdef ARBITER_CONFIG_BIG_ENDIAN
+#    define ARBITER_ENDIAN ARBITER_ENDIAN_BIG
+#else
+#    define ARBITER_ENDIAN ARBITER_ENDIAN_LITTLE
+#endif
+
+// Find perfect alignment (should supports SIMD alignment if SIMD available)
+#define ARBITER_SIMD_ALIGNMENT 16
+// Declare variable aligned to SIMD alignment.
+#define ARBITER_SIMD_ALIGNED_DECL(type, var)   OGRE_ALIGNED_DECL(type, var, OGRE_SIMD_ALIGNMENT)
 
 #ifdef NDEBUG
 #undef NDEBUG

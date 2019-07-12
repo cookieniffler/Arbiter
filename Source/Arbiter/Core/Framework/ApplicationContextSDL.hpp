@@ -1,7 +1,6 @@
 #ifndef __SDL2SETUP_HPP__
 #define __SDL2SETUP_HPP__
 
-#include <Arbiter/Core/Arbiter.hpp>
 #include <SDL.h>
 
 namespace Arbiter {

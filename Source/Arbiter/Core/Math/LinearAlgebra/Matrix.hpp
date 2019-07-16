@@ -3,7 +3,7 @@
 #define __MATRIX_HPP__
 
 #include <cstdint>
-#include <Arbiter/Core/Common/base.h>
+#include <Arbiter/Core/Common/base.hpp>
 
 ARBITER_NAMESPACE_BEGIN
 

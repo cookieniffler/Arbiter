@@ -1,3 +1,4 @@
+#pragma once
 #ifndef __ALIGNEDMEMORY_HPP__
 #define __ALIGNEDMEMORY_HPP__
 
@@ -5,7 +6,8 @@
 
 ARBITER_NAMESPACE_BEGIN
 
-class AlignedMemory {
+class AlignedMemory
+{
 private:
 protected:
 public:

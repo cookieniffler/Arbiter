@@ -6,13 +6,14 @@
 
 ARBITER_NAMESPACE_BEGIN
 
-class AutomaticDifferentiation {
+class AutomaticDifferentiation
+{
 private:
 protected:
 public:
 	AutomaticDifferentiation();
 	virtual ~AutomaticDifferentiation() = default;
-	
+
 };
 
 ARBITER_NAMESPACE_END

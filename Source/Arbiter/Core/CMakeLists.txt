@@ -28,8 +28,6 @@ arbiter_add_sources(
 	Math/ReverseModeAD.hpp
 	Math/Geometry/Geometry.hpp
 	Math/Kernels/Kernel.hpp
-	Math/Utility.hpp
-	Math/Utility.cpp
 	Math/Vector.hpp
 	Memory/AlignedMemory.hpp
 	Parser/Parser.hpp

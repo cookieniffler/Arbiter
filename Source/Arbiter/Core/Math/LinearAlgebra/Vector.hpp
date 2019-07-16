@@ -3,7 +3,7 @@
 #define __VECTOR_HPP__
 
 #include <ostream>
-#include <Arbiter/Core/Common/Base.h>
+#include <Arbiter/Core/Common/Base.hpp>
 
 ARBITER_NAMESPACE_BEGIN
 

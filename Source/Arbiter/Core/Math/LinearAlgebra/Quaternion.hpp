@@ -2,7 +2,7 @@
 #ifndef __QUATERNION_HPP__
 #define __QUATERNION_HPP__
 
-#include <Arbiter/Core/Common/Base.h>
+#include <Arbiter/Core/Common/Base.hpp>
 
 ARBITER_NAMESPACE_BEGIN
 

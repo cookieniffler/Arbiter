@@ -16,8 +16,8 @@ private:
 	std::vector< std::shared_ptr<Light> > scene_lights;
 
 public:
-    Scene();
-    virtual ~Scene() = default;
+  Scene();
+  virtual ~Scene() = default;
 
 	size_t GetObjectsCount() const;
 	size_t GetLightsCount() const;

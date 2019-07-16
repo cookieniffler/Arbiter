@@ -6,6 +6,7 @@ arbiter_add_sources(
 	Common/Platform.hpp
 	Containers/Containers.hpp
 	Diagnostics/Diagnostics.hpp
+	Exception/Exception.hpp
 	Framework/Application.hpp
 	Framework/Application.cpp
 	Framework/ApplicationContextSDL.hpp
@@ -25,10 +26,12 @@ arbiter_add_sources(
 	Math/Matrix.hpp
 	Math/Quaternion.hpp
 	Math/ReverseModeAD.hpp
+	Math/Geometry/Geometry.hpp
+	Math/Kernels/Kernel.hpp
 	Math/Utility.hpp
 	Math/Utility.cpp
 	Math/Vector.hpp
-	Memory/Memory.hpp
+	Memory/AlignedMemory.hpp
 	Parser/Parser.hpp
 	Threading/Threading.hpp
 )

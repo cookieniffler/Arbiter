@@ -2,7 +2,7 @@
 #ifndef __SCENEMANAGER_HPP__
 #define __SCENEMANAGER_HPP__
 
-#include <Arbiter/Core/Common/Base.h>
+#include <Arbiter/Core/Common/Base.hpp>
 
 ARBITER_NAMESPACE_BEGIN
 

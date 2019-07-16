@@ -2,37 +2,19 @@
 #ifndef __APPLICATION_HPP__
 #define __APPLICATION_HPP__
 
-#include <memory>
+#include <Arbiter/Core/Common/Base.hpp>
+#include <Arbiter/Core/Common/Singleton.hpp>
 #include <Arbiter/Core/Framework/Scene.hpp>
-#include <Arbiter/Graphics/Engine/Renderer.hpp>
-#include <Arbiter/Graphics/Engine/Camera.hpp>
+#include <Arbiter/Core/Framework/RenderEngine.hpp>
 
 ARBITER_NAMESPACE_BEGIN
 
-class Application {
+class Application : public Singleton<Application> {
 private:
-	virtual void SetupScene();
-	virtual void SetupCamera();
-
 protected:
-	bool is_running;
-	std::shared_ptr<class Scene> scene;
-	std::shared_ptr<class Camera> camera;
-
 public:
-  Application();
-	Application(std::shared_ptr<Scene> scene, std::shared_ptr<Camera> camera);
-  virtual ~Application() = default;
-
-	virtual void Initialize();
-	static std::unique_ptr<Application> CreateApplication(std::shared_ptr<Scene> scene,
-		std::shared_ptr<Camera> camera);
-	static std::shared_ptr<Scene> CreateScene();
-	static std::shared_ptr<Camera> CreateCamera();
-	virtual std::unique_ptr<Renderer> CreateRenderer();
-	virtual bool IsFinished() const;
-	virtual void RequestExit();
-	virtual void Tick(double deltaTime);
+	Application();
+	virtual ~Application() = default;
 
 };
 

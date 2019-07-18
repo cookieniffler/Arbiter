@@ -11,7 +11,5 @@
 
 int main(int argc, char const *argv[])
 {
-	SmokeSimulator sims(std::shared_ptr<Arbiter::Scene>(), std::shared_ptr<Arbiter::Camera>());
-	std::cout << "[+] Smoke Simulator!" << std::endl;
-	for(;;) {}
+	return 0;
 }

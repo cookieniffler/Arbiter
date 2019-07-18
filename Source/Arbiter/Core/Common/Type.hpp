@@ -19,18 +19,18 @@ using Float32 = float;
 using Float64 = double;
 
 #ifdef ARBITER_DOUBLE_PRECISION == 1
-using Real = float64;
+using Real = Float64;
 #else
-using Real = float32;
+using Real = Float32;
 #endif
 
 // custom literals
-real 		constexpr operator"" _f(long double v) 					{ return real(v); }
-real 		constexpr operator"" _f(unsigned long long v) 	{ return real(v); }
-float32 constexpr operator"" _f32(long double v) 				{ return float32(v); }
-float32 constexpr operator"" _f32(unsigned long long v) { return float32(v); }
-float64 constexpr operator"" _f64(long double v) 				{ return float64(v); }
-float64 constexpr operator"" _f64(unsigned long long v) { return float64(v); }
+Real		constexpr operator"" _f(long double v) 					{ return Real(v); }
+Real		constexpr operator"" _f(unsigned long long v) 	{ return Real(v); }
+Float32 constexpr operator"" _f32(long double v) 				{ return Float32(v); }
+Float32 constexpr operator"" _f32(unsigned long long v) { return Float32(v); }
+Float64 constexpr operator"" _f64(long double v) 				{ return Float64(v); }
+Float64 constexpr operator"" _f64(unsigned long long v) { return Float64(v); }
 
 using String = std::string;
 using StringStream = std::basic_stringstream<char,std::char_traits<char>,std::allocator<char> >;

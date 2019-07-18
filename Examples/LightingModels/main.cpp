@@ -12,19 +12,5 @@
 
 int main(int argc, char const *argv[])
 {
-	std::unique_ptr<Arbiter::Application> app = 
-		Lighting::CreateApplication(Lighting::CreateScene(), Lighting::CreateCamera());
-	if (!app) {
-		std::cerr << "ERROR: Created application is not valid." << std::endl;
-		return 1;
-	}
-
-	std::unique_ptr<Arbiter::Renderer> renderer = app->CreateRenderer();
-	if (!renderer) {
-		std::cerr << "ERROR: Created renderer is not valid." << std::endl;
-		return 1;
-	}
-
-
 	return 0;
 }

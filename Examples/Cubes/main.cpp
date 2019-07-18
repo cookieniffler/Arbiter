@@ -13,21 +13,5 @@
 
 int main(int argc, char const *argv[])
 {
-	std::unique_ptr<Arbiter::Application> app =
-		Cubes::CreateApplication(Cubes::CreateScene(), Cubes::CreateCamera());
-	if (!app) {
-		std::cerr << "[-] ERROR: Created application is not valid." << std::endl;
-		return 1;
-	}
-
-	std::unique_ptr<Arbiter::Renderer> renderer = app->CreateRenderer();
-	if (!renderer) {
-		std::cerr << "[-] ERROR: Created renderer is not valid." << std::endl;
-		return 1;
-	}
-
-	for(;;)
-		app->Tick(0);
-
 	return 0;
 }

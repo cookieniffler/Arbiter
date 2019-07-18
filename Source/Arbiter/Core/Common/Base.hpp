@@ -25,4 +25,7 @@
 #define OPENGL_NAMESPACE_BEGIN 	namespace Opengl {
 #define OPENGL_NAMESPACE_END	 	}
 
+#include <Arbiter/Core/Common/StandardHeaders.hpp>
+#include <Arbiter/Core/Common/Type.hpp>
+
 #endif  // __BASE_HPP__

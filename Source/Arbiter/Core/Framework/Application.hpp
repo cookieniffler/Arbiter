@@ -11,6 +11,7 @@ ARBITER_NAMESPACE_BEGIN
 
 class Application : public Singleton<Application> {
 private:
+	friend class RenderEngine;
 protected:
 public:
 	Application();

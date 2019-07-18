@@ -3,14 +3,15 @@
 #define __PLATFORM_HPP__
 
 #ifndef ARBITER_VERSION
-#define ARBITER_VERSION "1.0.0"
+#	define ARBITER_VERSION "1.0.0"
+#endif
 
 #define ARBITER_PLATFORM_WINDOWS 	 	 1
 #define ARBITER_PLATFORM_LINUX	 		 2
 #define ARBITER_PLATFORM_APPLE 		 	 3
-#define ARBITER_PLATFORM_APPLE_IOS   4
+#define ARBITER_PLATFORM_APPLE_IOS		 4
 #define ARBITER_PLATFORM_ANDROID 	 	 5
-#define ARBITER_PLATFORM_EMSCRIPTEN  6
+#define ARBITER_PLATFORM_EMSCRIPTEN		 6
 
 #define ARBITER_COMPILER_MSVC 		1
 #define ARBITER_COMPILER_GNUC 		2
@@ -20,7 +21,7 @@
 #define ARBITER_COMPILER_CLANG 		6
 
 #define ARBITER_ENDIAN_LITTLE 	1
-#define ARBITER_ENDIAN_BIG 			2
+#define ARBITER_ENDIAN_BIG 		2
 #define ARBITER_ARCHITECTURE_32 1
 #define ARBITER_ARCHITECTURE_64 2
 
@@ -58,15 +59,15 @@
 #	define ARBITER_ALIGNED(x) __attribute__((aligned(x)))
 #endif
 
-#if __cplusplus >= 201703L
+#ifndef __cplusplus
+#	error C++ is required!
+#elif __cplusplus >= 201703L
 #	define ARBITER_CPP17
-#else
-#if defined(ARBITER_COMPILER_CLANG)
+#elif (ARBITER_COMPILER == ARBITER_COMPILER_CLANG)
 	static_assert(false, "For clang compilers, use -std=c++17");
 #endif
-	static_assert(__cplusplus >= 201402L, "C++14 required.");
+static_assert(__cplusplus >= 201402L, "C++14 Support Required");
 #define ARBITER_CPP14
-#endif
 
 #if defined(__x86_64__) || defined(_M_X64) || defined(_M_AMD64) || defined(_M_ARM64) || defined(__powerpc64__) || defined(__alpha__) || defined(__ia64__) || defined(__s390__) || defined(__s390x__) || defined(__arm64__) || defined(__aarch64__) || defined(__mips64) || defined(__mips64_)
 #   define ARBITER_ARCH_TYPE ARBITER_ARCHITECTURE_64
@@ -86,23 +87,23 @@
 #define ARBITER_SIMD_ALIGNED_DECL(type, var)   OGRE_ALIGNED_DECL(type, var, OGRE_SIMD_ALIGNMENT)
 
 #ifdef NDEBUG
-#undef NDEBUG
+#	undef NDEBUG
 #endif
 
 #ifdef ARBITER_STATIC_DEFINE
-#define _Arbiter_Export
-#define _Arbiter_Private
+#	define _Arbiter_Export
+#	define _Arbiter_Private
 #else
 #ifndef _Arbiter_Export
 #ifdef ARBITER_EXPORTS
-#      define _Arbiter_Export __declspec(dllexport)
-#    else
-#      define _Arbiter_Export __declspec(dllimport)
-#    endif
-#  endif
-#  ifndef _Arbiter_Private
-#    define _Arbiter_Private
-#  endif
+#		define _Arbiter_Export __declspec(dllexport)
+#	else
+#		define _Arbiter_Export __declspec(dllimport)
+#	endif
+#	endif
+#	ifndef _Arbiter_Private
+#		define _Arbiter_Private
+#	endif
 #endif
 
 #ifndef ARBITER_DEPRECATED

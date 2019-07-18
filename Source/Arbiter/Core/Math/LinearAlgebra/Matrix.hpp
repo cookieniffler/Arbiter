@@ -8,40 +8,40 @@
 ARBITER_NAMESPACE_BEGIN
 
 template <typename M>
-class mat3x3
+class Mat3x3
 {
 private:
 	M m[9];
 
 public:
-	explicit mat3x3();
-	virtual ~mat3x3() = default;
+	explicit Mat3x3();
+	virtual ~Mat3x3() = default;
 
 };
 
 template <typename M>
-class mat4x4
+class Mat4x4
 {
 private:
 	M m[16];
 
 public:
-	explicit mat4x4();
-	virtual ~mat4x4() = default;
+	explicit Mat4x4();
+	virtual ~Mat4x4() = default;
 
 };
 
-using mat3d = mat3x3<double>;
-using mat3f = mat3x3<float>;
-using mat3i = mat3x3<int32_t>;
-using mat3u = mat3x3<uint32_t>;
-using mat3b = mat3x3<bool>;
+using Mat3d = Mat3x3<double>;
+using Mat3f = Mat3x3<float>;
+using Mat3i = Mat3x3<int32_t>;
+using Mat3u = Mat3x3<uint32_t>;
+using Mat3b = Mat3x3<bool>;
 
-using mat4d = mat4x4<double>;
-using mat4f = mat4x4<float>;
-using mat4i = mat4x4<int32_t>;
-using mat4u = mat4x4<uint32_t>;
-using mat4b = mat4x4<bool>;
+using Mat4d = Mat4x4<double>;
+using Mat4f = Mat4x4<float>;
+using Mat4i = Mat4x4<int32_t>;
+using Mat4u = Mat4x4<uint32_t>;
+using Mat4b = Mat4x4<bool>;
 
 ARBITER_NAMESPACE_END
 

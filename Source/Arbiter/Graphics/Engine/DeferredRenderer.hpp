@@ -9,6 +9,8 @@ ARBITER_NAMESPACE_BEGIN
 
 class DeferredRenderer : public Renderer
 {
+private:
+protected:
 public:
 	DeferredRenderer();
 	virtual ~DeferredRenderer() = default;

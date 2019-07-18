@@ -2,14 +2,16 @@
 #ifndef __FRAMEBUFFER_HPP__
 #define __FRAMEBUFFER_HPP__
 
-#include <memory>
 #include <Arbiter/Core/Common/Base.hpp>
+#include <Arbiter/Core/Common/Platform.hpp>
 
 ARBITER_NAMESPACE_BEGIN
 OPENGL_NAMESPACE_BEGIN
 
-class FrameBuffer : public std::enable_shared_from_this<FrameBuffer> {
+class _Arbiter_Export FrameBuffer : public std::enable_shared_from_this<FrameBuffer>
+{
 private:
+protected:
 public:
 	FrameBuffer();
 	virtual ~FrameBuffer() = default;

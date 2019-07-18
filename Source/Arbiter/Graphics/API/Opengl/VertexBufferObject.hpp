@@ -8,7 +8,8 @@
 ARBITER_NAMESPACE_BEGIN
 OPENGL_NAMESPACE_BEGIN
 
-class VertexBuffer : public std::enable_shared_from_this<VertexBuffer> {
+class VertexBuffer : public std::enable_shared_from_this<VertexBuffer>
+{
 private:
 public:
 	VertexBuffer();

@@ -8,8 +8,10 @@
 ARBITER_NAMESPACE_BEGIN
 OPENGL_NAMESPACE_BEGIN
 
-class VertexArray : public std::enable_shared_from_this<VertexArray> {
+class VertexArray : public std::enable_shared_from_this<VertexArray>
+{
 private:
+protected:
 public:
 	VertexArray();
 	virtual ~VertexArray() = default;

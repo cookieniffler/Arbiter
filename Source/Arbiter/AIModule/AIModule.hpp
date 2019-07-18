@@ -1,8 +1,12 @@
+#pragma once
 #ifndef __AIMODULE_HPP__
 #define __AIMODULE_HPP__
 
-namespace Arbiter {
+#include <Arbiter/Core/Common/Base.hpp>
 
-} // Arbiter
+ARBITER_NAMESPACE_BEGIN
+
+
+ARBITER_NAMESPACE_END
 
 #endif  // __AIMODULE_HPP__

@@ -25,18 +25,4 @@
 #define OPENGL_NAMESPACE_BEGIN 	namespace Opengl {
 #define OPENGL_NAMESPACE_END	 	}
 
-#include <cstring>
-#include <iostream>
-#include <cstdlib>
-#include <cstdio>
-#include <cstddef>
-#include <cstdint>
-#include <utility>
-#include <type_traits>
-#include <cstdint>
-#include <algorithm>
-#include <memory>
-#include <csignal>
-#include <vector>
-
 #endif  // __BASE_HPP__

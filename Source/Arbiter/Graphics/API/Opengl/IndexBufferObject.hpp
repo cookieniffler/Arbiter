@@ -8,7 +8,8 @@
 ARBITER_NAMESPACE_BEGIN
 OPENGL_NAMESPACE_BEGIN
 
-class IndexBuffer : public std::enable_shared_from_this<IndexBuffer> {
+class IndexBuffer : public std::enable_shared_from_this<IndexBuffer>
+{
 private:
 public:
 	IndexBuffer();

@@ -8,7 +8,8 @@
 ARBITER_NAMESPACE_BEGIN
 OPENGL_NAMESPACE_BEGIN
 
-class GraphicsApi : public std::enable_shared_from_this<GraphicsApi> {
+class GraphicsApi : public std::enable_shared_from_this<GraphicsApi>
+{
 private:
 public:
     GraphicsApi();

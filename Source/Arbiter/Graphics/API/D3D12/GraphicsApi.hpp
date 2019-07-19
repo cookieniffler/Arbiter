@@ -2,8 +2,7 @@
 #ifndef __GRAPHICSAPI_HPP__
 #define __GRAPHICSAPI_HPP__
 
-#include <memory>
-#include <Arbiter/Core/Common/Base.h>
+#include <Arbiter/Core/Common/Base.hpp>
 
 ARBITER_NAMESPACE_BEGIN
 D3D12_NAMESPACE_BEGIN

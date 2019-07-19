@@ -2,7 +2,6 @@
 #ifndef __COMPLEX_HPP__
 #define __COMPLEX_HPP__
 
-#include <ostream>
 #include <Arbiter/Core/Common/Base.hpp>
 
 ARBITER_NAMESPACE_BEGIN

@@ -2,8 +2,6 @@
 #ifndef __SCENE_HPP__
 #define __SCENE_HPP__
 
-#include <memory>
-#include <vector>
 #include <Arbiter/Core/Common/Base.hpp>
 #include <Arbiter/Core/Framework/SceneBuffer.hpp>
 #include <Arbiter/Graphics/Engine/Light.hpp>

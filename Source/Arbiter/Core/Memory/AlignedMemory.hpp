@@ -2,7 +2,7 @@
 #ifndef __ALIGNEDMEMORY_HPP__
 #define __ALIGNEDMEMORY_HPP__
 
-#incldue <Arbiter/Core/Common/Base.hpp>
+#include <Arbiter/Core/Common/Base.hpp>
 
 ARBITER_NAMESPACE_BEGIN
 

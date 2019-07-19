@@ -18,7 +18,7 @@ using Uint64 = uint64_t;
 using Float32 = float;
 using Float64 = double;
 
-#ifdef ARBITER_DOUBLE_PRECISION == 1
+#if (ARBITER_DOUBLE_PRECISION == 1)
 using Real = Float64;
 #else
 using Real = Float32;

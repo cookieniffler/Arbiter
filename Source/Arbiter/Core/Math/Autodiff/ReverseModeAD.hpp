@@ -3,7 +3,7 @@
 #define __REVERSEMODEAD_HPP__
 
 #include <Arbiter/Core/Common/Base.hpp>
-#incude <Arbiter/Core/Math/AutomaticDifferentiation.hpp>
+#include <Arbiter/Core/Math/AutomaticDifferentiation.hpp>
 
 ARBITER_NAMESPACE_BEGIN
 

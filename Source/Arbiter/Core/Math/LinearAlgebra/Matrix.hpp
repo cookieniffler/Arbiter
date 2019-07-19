@@ -2,8 +2,7 @@
 #ifndef __MATRIX_HPP__
 #define __MATRIX_HPP__
 
-#include <cstdint>
-#include <Arbiter/Core/Common/base.hpp>
+#include <Arbiter/Core/Common/Base.hpp>
 
 ARBITER_NAMESPACE_BEGIN
 

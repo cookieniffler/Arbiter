@@ -6,7 +6,8 @@
 
 ARBITER_NAMESPACE_BEGIN
 
-class SceneBuffer : std::enable_shared_from_this<SceneBuffer> {
+class SceneBuffer
+{
 private:
 protected:
 public:

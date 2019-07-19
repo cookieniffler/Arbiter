@@ -6,8 +6,10 @@
 
 ARBITER_NAMESPACE_BEGIN
 
-class Renderer : std::enable_shared_from_this<Renderer> {
+class Renderer : public std::enable_shared_from_this<Renderer>
+{
 private:
+protected:
 public:
 	Renderer();
 	virtual ~Renderer() = default;

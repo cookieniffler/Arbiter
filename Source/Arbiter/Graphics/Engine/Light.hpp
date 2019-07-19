@@ -2,7 +2,6 @@
 #ifndef __LIGHT_HPP__
 #define __LIGHT_HPP__
 
-#include <memory>
 #include <Arbiter/Core/Common/Base.hpp>
 
 ARBITER_NAMESPACE_BEGIN

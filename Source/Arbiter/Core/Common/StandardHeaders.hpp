@@ -30,6 +30,7 @@
 #include <sstream>
 
 #include <atomic>
+#include <memory>
 
 extern "C" {
 	#include <sys/types.h>
@@ -37,6 +38,7 @@ extern "C" {
 }
 
 #include <Arbiter/Core/Common/Platform.hpp>
+#include <Arbiter/Core/Common/Type.hpp>
 
 #if ARBITER_PLATFORM == ARBITER_PLATFORM_WINDOWS
 #  undef min

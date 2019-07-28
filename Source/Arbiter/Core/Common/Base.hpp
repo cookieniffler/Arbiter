@@ -23,7 +23,7 @@
 #define METAL_NAMESPACE_BEGIN 	namespace Metal {
 #define METAL_NAMESPACE_END	  	}
 #define OPENGL_NAMESPACE_BEGIN 	namespace Opengl {
-#define OPENGL_NAMESPACE_END	}
+#define OPENGL_NAMESPACE_END		}
 
 #include <Arbiter/Core/Common/StdHeaders.hpp>
 

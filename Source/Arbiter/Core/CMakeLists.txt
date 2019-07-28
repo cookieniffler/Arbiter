@@ -4,6 +4,9 @@ set(library_name ArbiterCore)
 arbiter_add_sources(
 	Common/Base.hpp
 	Common/Platform.hpp
+	Common/Singleton.hpp
+	Common/StdHeaders.hpp
+	Common/Type.hpp
 	Containers/Containers.hpp
 	Diagnostics/Diagnostics.hpp
 	Exception/Exception.hpp
@@ -25,7 +28,8 @@ arbiter_add_sources(
 	Math/Autodiff/ReverseModeAD.hpp
 	Math/Geometry/Geometry.hpp
 	Math/Kernels/Kernel.hpp
-	Math/LinearAlgebra/CholeskyDecomposition.hpp	
+	Math/LinearAlgebra/Angle.hpp
+	Math/LinearAlgebra/CholeskyDecomposition.hpp
 	Math/LinearAlgebra/Complex.hpp
 	Math/LinearAlgebra/DenseMatrix.hpp
 	Math/LinearAlgebra/Matrix.hpp

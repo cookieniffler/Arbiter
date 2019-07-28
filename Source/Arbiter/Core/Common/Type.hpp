@@ -3,7 +3,7 @@
 #define __TYPE_HPP__
 
 #include <Arbiter/Core/Common/Base.hpp>
-#include <Arbiter/Core/Common/StandardHeaders.hpp>
+#include <Arbiter/Core/Common/StdHeaders.hpp>
 
 using Uchar = unsigned char;
 using Int8 = int8_t;
@@ -36,6 +36,7 @@ using String = std::string;
 using StringStream = std::basic_stringstream<char,std::char_traits<char>,std::allocator<char> >;
 
 // Forward Declaration of Classes
+class Angle;
 class Application;
 class ApplicationContextSDL;
 class AutomaticDifferentiation;
@@ -45,6 +46,7 @@ class CholeskyDecomposition;
 class Complex;
 class ComputationalGraph;
 class ConvexBody;
+class Degree;
 class DenseMatrix;
 class Graph;
 class ForwardModeAD;
@@ -62,6 +64,7 @@ class Plane;
 class PlaneBoundedVolume;
 class Polygon;
 class Quaternion;
+class Radian;
 class Ray;
 class RenderTarget;
 class ReverseModeAD;

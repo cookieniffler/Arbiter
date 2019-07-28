@@ -1,4 +1,4 @@
-#include <Arbiter/Graphics/API/Opengl/VertexArray.hpp>
+#include <Arbiter/Graphics/API/Opengl/VertexArrayObject.hpp>
 
 ARBITER_NAMESPACE_BEGIN
 OPENGL_NAMESPACE_BEGIN

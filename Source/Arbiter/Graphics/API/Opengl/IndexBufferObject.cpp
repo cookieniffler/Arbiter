@@ -1,4 +1,4 @@
-#include <Arbiter/Graphics/API/Opengl/IndexBuffer.hpp>
+#include <Arbiter/Graphics/API/Opengl/IndexBufferObject.hpp>
 
 ARBITER_NAMESPACE_BEGIN
 OPENGL_NAMESPACE_BEGIN

@@ -1,6 +1,6 @@
 #pragma once
-#ifndef __STANDARDHEADERS_HPP__
-#define __STANDARDHEADERS_HPP__
+#ifndef __STDHEADERS_HPP__
+#define __STDHEADERS_HPP__
 
 #include <cassert>
 #include <cstdio>
@@ -67,4 +67,4 @@ extern "C" {
 	#include <emscripten/emscripten.h>
 #endif
 
-#endif  // __STANDARDHEADERS_HPP__
+#endif  // __STDHEADERS_HPP__

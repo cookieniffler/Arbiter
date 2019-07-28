@@ -11,6 +11,8 @@ target_link_libraries(${PROJECT_NAME}
 	optimized ${LIB_RELEASE}/SDL2main.lib
 	optimized ${LIB_RELEASE}/glew32.lib
 	optimized ArbiterCore
+	optimized ArbiterGraphicsAPI
+	optimized ArbiterGraphicsEngine
 )
 elseif(CMAKE_SYSTEM_NAME MATCHES "Linux")
 target_link_libraries(${PROJECT_NAME}
@@ -18,5 +20,7 @@ target_link_libraries(${PROJECT_NAME}
 	${SDL2_LIBRARIES}
 	${GLEW_LIBRARIES}
 	optimized ArbiterCore
+	optimized ArbiterGraphicsAPI
+	optimized ArbiterGraphicsEngine
 )
 endif()

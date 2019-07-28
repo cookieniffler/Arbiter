@@ -66,8 +66,8 @@
 #elif (ARBITER_COMPILER == ARBITER_COMPILER_CLANG)
 	static_assert(false, "For clang compilers, use -std=c++17");
 #endif
-static_assert(__cplusplus >= 201402L, "C++14 Support Required");
-#define ARBITER_CPP14
+//static_assert(__cplusplus >= 201402L, "C++14 Support Required");
+//#define ARBITER_CPP14
 
 #if defined(__x86_64__) || defined(_M_X64) || defined(_M_AMD64) || defined(_M_ARM64) || defined(__powerpc64__) || defined(__alpha__) || defined(__ia64__) || defined(__s390__) || defined(__s390x__) || defined(__arm64__) || defined(__aarch64__) || defined(__mips64) || defined(__mips64_)
 #   define ARBITER_ARCH_TYPE ARBITER_ARCHITECTURE_64

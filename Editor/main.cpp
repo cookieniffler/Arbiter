@@ -9,10 +9,10 @@
 
 int main(int argc, char const *argv[])
 {
-	if (SDL_Init(SDL_INIT_VIDEO) < 0) {
-		fprintf(stderr, "Failed to initialize SDL video\n");
-		return 0;
-	}
+    if (SDL_Init(SDL_INIT_VIDEO) < 0) {
+        fprintf(stderr, "Failed to initialize SDL video\n");
+        return 0;
+    }
 	SDL_Window* m_window = SDL_CreateWindow(
 		"NodeEditor",
 		SDL_WINDOWPOS_CENTERED,
@@ -55,22 +55,22 @@ int main(int argc, char const *argv[])
 	glDepthFunc(GL_LESS);
 	glEnableClientState(GL_VERTEX_ARRAY);
 	glDisableClientState(GL_COLOR_ARRAY);
-	
+
 	bool done = false;
 	while (!done) {
-		SDL_Event event;
-		while (SDL_PollEvent(&event)) {
-			if (event.type == SDL_QUIT)
-				done = true;
-			if (event.type == SDL_WINDOWEVENT && event.window.event == SDL_WINDOWEVENT_CLOSE && event.window.windowID == SDL_GetWindowID(m_window))
-				done = true;
-			if (event.type == SDL_KEYDOWN && event.key.keysym.sym == SDLK_ESCAPE)
-				done = true;
-		}
+        SDL_Event event;
+        while (SDL_PollEvent(&event)) {
+            if (event.type == SDL_QUIT)
+                done = true;
+            if (event.type == SDL_WINDOWEVENT && event.window.event == SDL_WINDOWEVENT_CLOSE && event.window.windowID == SDL_GetWindowID(m_window))
+                done = true;
+            if (event.type == SDL_KEYDOWN && event.key.keysym.sym == SDLK_ESCAPE)
+                done = true;
+        }
 
-		glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
-		glClearColor(0.95f, 0.95f, 0.95f, 1.0f);
-		SDL_GL_SwapWindow(m_window);
+        glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+        glClearColor(0.95f, 0.95f, 0.95f, 1.0f);
+        SDL_GL_SwapWindow(m_window);
 	}
 
 	return 0;

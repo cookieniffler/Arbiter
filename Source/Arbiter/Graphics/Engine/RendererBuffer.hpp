@@ -10,8 +10,8 @@ class RendererBuffer : std::enable_shared_from_this<RendererBuffer>
 {
 private:
 public:
-	RendererBuffer();
-	virtual ~RendererBuffer() = default;
+    RendererBuffer();
+    virtual ~RendererBuffer() = default;
 
 };
 

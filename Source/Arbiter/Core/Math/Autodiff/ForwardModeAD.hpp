@@ -9,9 +9,9 @@ class ForwardModeAD : public AutomaticDifferentiation {
 private:
 protected:
 public:
-	ForwardModeAD();
-	virtual ~ForwardModeAD() = default;
-	
+    ForwardModeAD();
+    virtual ~ForwardModeAD() = default;
+
 };
 
 #endif  __FORWARDMODEAD_HPP__

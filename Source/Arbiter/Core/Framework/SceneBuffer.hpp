@@ -11,8 +11,8 @@ class SceneBuffer
 private:
 protected:
 public:
-	SceneBuffer();
-	virtual ~SceneBuffer() = default;
+    SceneBuffer();
+    virtual ~SceneBuffer() = default;
 
 };
 

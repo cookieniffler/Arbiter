@@ -10,8 +10,8 @@ class DenseMatrix {
 private:
 protected:
 public:
-	DenseMatrix();
-	virtual ~DenseMatrix() = default;
+    DenseMatrix();
+    virtual ~DenseMatrix() = default;
 
 };
 

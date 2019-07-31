@@ -33,12 +33,11 @@
 #include <memory>
 
 extern "C" {
-	#include <sys/types.h>
-	#include <sys/stat.h>
+    #include <sys/types.h>
+    #include <sys/stat.h>
 }
 
 #include <Arbiter/Core/Common/Platform.hpp>
-#include <Arbiter/Core/Common/Type.hpp>
 
 #if ARBITER_PLATFORM == ARBITER_PLATFORM_WINDOWS
 #  undef min
@@ -50,21 +49,21 @@ extern "C" {
 
 #if ARBITER_PLATFORM == ARBITER_PLATFORM_LINUX || ARBITER_PLATFORM == ARBITER_PLATFORM_ANDROID || ARBITER_PLATFORM == ARBITER_PLATFORM_EMSCRIPTEN
 extern "C" {
-	#include <unistd.h>
-	#include <dlfcn.h>
+    #include <unistd.h>
+    #include <dlfcn.h>
 }
 #endif
 
 #if ARBITER_PLATFORM == ARBITER_PLATFORM_APPLE || ARBITER_PLATFORM == ARBITER_PLATFORM_APPLE_IOS
 extern "C" {
-	#include <unistd.h>
-	#include <sys/param.h>
-	#include <CoreFoundation/CoreFoundation.h>
+    #include <unistd.h>
+    #include <sys/param.h>
+    #include <CoreFoundation/CoreFoundation.h>
 }
 #endif
 
 #if ARBITER_PLATFORM == ARBITER_PLATFORM_EMSCRIPTEN
-	#include <emscripten/emscripten.h>
+    #include <emscripten/emscripten.h>
 #endif
 
 #endif  // __STDHEADERS_HPP__

@@ -9,9 +9,10 @@ ARBITER_NAMESPACE_BEGIN
 
 class OrthographicCamera : public Camera {
 private:
+protected:
 public:
-  OrthographicCamera();
-  virtual ~OrthographicCamera() = default;
+    OrthographicCamera();
+    virtual ~OrthographicCamera() = default;
 
 };
 

@@ -9,15 +9,13 @@
 
 class Lighting : public Arbiter::Application {
 private:
-	virtual void SetupScene() {}
-	virtual void SetupCamera() {}
-
+    virtual void SetupScene() {}
+    virtual void SetupCamera() {}
 protected:
-
 public:
-	Lighting(std::shared_ptr<Arbiter::Scene> scene, std::shared_ptr<Arbiter::Camera> camera) {}
-	static std::unique_ptr<Arbiter::Application> CreateApplication(std::shared_ptr<Arbiter::Scene> scene,
-		std::shared_ptr<Arbiter::Camera> camera) { return std::unique_ptr<Arbiter::Application>(); }
+    Lighting(std::shared_ptr<Arbiter::Scene> scene, std::shared_ptr<Arbiter::Camera> camera) {}
+    static std::unique_ptr<Arbiter::Application> CreateApplication(std::shared_ptr<Arbiter::Scene> scene,
+        std::shared_ptr<Arbiter::Camera> camera) { return std::unique_ptr<Arbiter::Application>(); }
 
 };
 

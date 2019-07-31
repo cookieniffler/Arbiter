@@ -9,8 +9,8 @@ class SparseMatrix {
 private:
 protected:
 public:
-	SparseMatrix();
-	virtual ~SparseMatrix() = default;
+    SparseMatrix();
+    virtual ~SparseMatrix() = default;
 
 };
 

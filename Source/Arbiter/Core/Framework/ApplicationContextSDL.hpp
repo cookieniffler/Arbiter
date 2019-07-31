@@ -14,11 +14,11 @@ class ApplicationContextSDL {
 private:
 protected:
 public:
-  static bool InitOpenGL(SDL_Window* window, void* sdl_gl_context);
-  static bool InitVulkan(SDL_Window* window);
-  static void Shutdown();
-  static void NewFrame(SDL_Window* window);
-  static bool ProcessEvent(const SDL_Event* event);
+    static bool InitOpenGL(SDL_Window* window, void* sdl_gl_context);
+    static bool InitVulkan(SDL_Window* window);
+    static void Shutdown();
+    static void NewFrame(SDL_Window* window);
+    static bool ProcessEvent(const SDL_Event* event);
 
 };
 

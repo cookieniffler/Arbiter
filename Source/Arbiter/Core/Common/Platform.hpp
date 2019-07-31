@@ -64,7 +64,7 @@
 #elif __cplusplus >= 201703L
 #	define ARBITER_CPP17
 #elif (ARBITER_COMPILER == ARBITER_COMPILER_CLANG)
-	static_assert(false, "For clang compilers, use -std=c++17");
+    static_assert(false, "For clang compilers, use -std=c++17");
 #endif
 //static_assert(__cplusplus >= 201402L, "C++14 Support Required");
 //#define ARBITER_CPP14

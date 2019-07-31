@@ -9,22 +9,22 @@ ARBITER_NAMESPACE_BEGIN
 class Degree : public std::enable_shared_from_this<Degree>
 {
 private:
-	Real _degree;
+    Real _degree;
 protected:
 public:
-	Degree();
-	virtual ~Degree() = default;
+    Degree();
+    virtual ~Degree() = default;
 
 };
 
 class Radian : public std::enable_shared_from_this<Radian>
 {
 private:
-	Real _radian;
+    Real _radian;
 protected:
 public:
-	Radian();
-	virtual ~Radian() = default;
+    Radian();
+    virtual ~Radian() = default;
 
 };
 
@@ -33,8 +33,8 @@ class Angle : public std::enable_shared_from_this<Angle>
 private:
 protected:
 public:
-	Angle();
-	virtual ~Angle() = default;
+    Angle();
+    virtual ~Angle() = default;
 
 };
 

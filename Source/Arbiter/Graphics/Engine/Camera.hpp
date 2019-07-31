@@ -8,9 +8,10 @@ ARBITER_NAMESPACE_BEGIN
 
 class Camera {
 private:
+protected:
 public:
-  Camera();
-  virtual ~Camera() = default;
+    Camera();
+    virtual ~Camera() = default;
 
 };
 

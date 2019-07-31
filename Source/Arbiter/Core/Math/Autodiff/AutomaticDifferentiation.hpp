@@ -11,8 +11,8 @@ class AutomaticDifferentiation
 private:
 protected:
 public:
-	AutomaticDifferentiation();
-	virtual ~AutomaticDifferentiation() = default;
+    AutomaticDifferentiation();
+    virtual ~AutomaticDifferentiation() = default;
 
 };
 

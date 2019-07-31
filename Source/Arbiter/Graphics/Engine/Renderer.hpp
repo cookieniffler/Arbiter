@@ -11,8 +11,8 @@ class Renderer : public std::enable_shared_from_this<Renderer>
 private:
 protected:
 public:
-	Renderer();
-	virtual ~Renderer() = default;
+    Renderer();
+    virtual ~Renderer() = default;
 
 };
 

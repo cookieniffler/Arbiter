@@ -12,8 +12,8 @@ class _Arbiter_Export DepthBufferObject : public std::enable_shared_from_this<De
 private:
 protected:
 public:
-	DepthBufferObject();
-	virtual ~DepthBufferObject() = default;
+    DepthBufferObject();
+    virtual ~DepthBufferObject() = default;
 
 };
 

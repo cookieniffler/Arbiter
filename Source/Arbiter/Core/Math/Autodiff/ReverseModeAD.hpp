@@ -9,11 +9,11 @@ ARBITER_NAMESPACE_BEGIN
 
 class ReverseModeAD : public AutomaticDifferentiation {
 private:
-	/* data */
-
+protected:
 public:
-	ReverseModeAD (arguments);
-	virtual ~ReverseModeAD ();
+    ReverseModeAD (arguments);
+    virtual ~ReverseModeAD ();
+
 };
 
 ARBITER_NAMESPACE_END

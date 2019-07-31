@@ -12,8 +12,8 @@ class DeferredRenderer : public Renderer
 private:
 protected:
 public:
-	DeferredRenderer();
-	virtual ~DeferredRenderer() = default;
+    DeferredRenderer();
+    virtual ~DeferredRenderer() = default;
 
 };
 

@@ -25,11 +25,11 @@ using Real = Float32;
 #endif
 
 // custom literals
-Real		constexpr operator"" _f(long double v) 					{ return Real(v); }
-Real		constexpr operator"" _f(unsigned long long v) 	{ return Real(v); }
-Float32 constexpr operator"" _f32(long double v) 				{ return Float32(v); }
+Real    constexpr operator"" _f(long double v)          { return Real(v); }
+Real    constexpr operator"" _f(unsigned long long v)   { return Real(v); }
+Float32 constexpr operator"" _f32(long double v)        { return Float32(v); }
 Float32 constexpr operator"" _f32(unsigned long long v) { return Float32(v); }
-Float64 constexpr operator"" _f64(long double v) 				{ return Float64(v); }
+Float64 constexpr operator"" _f64(long double v)        { return Float64(v); }
 Float64 constexpr operator"" _f64(unsigned long long v) { return Float64(v); }
 
 using String = std::string;

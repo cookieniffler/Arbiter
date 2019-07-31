@@ -4,12 +4,12 @@ set(BIN_DEBUG "${CMAKE_SOURCE_DIR}/External/${TARGET_PLATFORM}/bin_${TARGET_ARCH
 set(BIN_RELEASE "${CMAKE_SOURCE_DIR}/External/${TARGET_PLATFORM}/bin_${TARGET_ARCH_NAME}_debug")
 
 if (NOT EXISTS ${LIB_DEBUG})
-	message("External libraries not found at ${LIB_DEBUG}!")
-	message(FATAL_ERROR "[-] Please compile external libraries for ${CMAKE_CXX_COMPILER_ID} on ${TARGET_ARCH_NAME}.")
+    message("External libraries not found at ${LIB_DEBUG}!")
+    message(FATAL_ERROR "[-] Please compile external libraries for ${CMAKE_CXX_COMPILER_ID} on ${TARGET_ARCH_NAME}.")
 endif()
 if (NOT EXISTS ${LIB_RELEASE})
-	message("External libraries not found at ${LIB_RELEASE}!")
-	message(FATAL_ERROR "[-] Please compile external libraries for ${CMAKE_CXX_COMPILER_ID} on ${TARGET_ARCH_NAME}.")
+    message("External libraries not found at ${LIB_RELEASE}!")
+    message(FATAL_ERROR "[-] Please compile external libraries for ${CMAKE_CXX_COMPILER_ID} on ${TARGET_ARCH_NAME}.")
 endif()
 
 set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/Bin)

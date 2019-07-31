@@ -11,11 +11,11 @@ ARBITER_NAMESPACE_BEGIN
 
 class Application : public Singleton<Application> {
 private:
-	friend class RenderEngine;
+    friend class RenderEngine;
 protected:
 public:
-	Application();
-	virtual ~Application() = default;
+    Application();
+    virtual ~Application() = default;
 
 };
 

@@ -6,11 +6,11 @@
 namespace Arbiter {
 
 enum class LOG_LEVEL {
-	DEBUG,
-	INFO,
-	WARNING,
-	ERROR,
-	CRITICAL
+    DEBUG,
+    INFO,
+    WARNING,
+    ERROR,
+    CRITICAL
 };
 
 } // Arbiter

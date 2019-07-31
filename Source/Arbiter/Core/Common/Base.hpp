@@ -18,13 +18,11 @@
 #define ARBITER_NAMESPACE_END   }
 
 // Renderer namespace
-#define D3D12_NAMESPACE_BEGIN 	namespace D3D12 {
-#define D3D12_NAMESPACE_END	  	}
-#define METAL_NAMESPACE_BEGIN 	namespace Metal {
-#define METAL_NAMESPACE_END	  	}
-#define OPENGL_NAMESPACE_BEGIN 	namespace Opengl {
-#define OPENGL_NAMESPACE_END		}
-
-#include <Arbiter/Core/Common/StdHeaders.hpp>
+#define D3D12_NAMESPACE_BEGIN   namespace D3D12 {
+#define D3D12_NAMESPACE_END     }
+#define METAL_NAMESPACE_BEGIN   namespace Metal {
+#define METAL_NAMESPACE_END     }
+#define OPENGL_NAMESPACE_BEGIN  namespace Opengl {
+#define OPENGL_NAMESPACE_END    }
 
 #endif  // __BASE_HPP__

@@ -11,8 +11,8 @@ class AlignedMemory
 private:
 protected:
 public:
-	AlignedMemory();
-	virtual ~AlignedMemory();
+    AlignedMemory();
+    virtual ~AlignedMemory();
 
 };
 

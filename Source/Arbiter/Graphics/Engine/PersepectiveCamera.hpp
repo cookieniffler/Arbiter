@@ -9,6 +9,7 @@ ARBITER_NAMESPACE_BEGIN
 
 class PersepectiveCamera : public Camera {
 private:
+protected:
 public:
     PersepectiveCamera();
     virtual ~PersepectiveCamera() = default;

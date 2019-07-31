@@ -10,11 +10,11 @@ template <typename M>
 class Mat3x3
 {
 private:
-	M m[9];
+    M m[9];
 
 public:
-	explicit Mat3x3();
-	virtual ~Mat3x3() = default;
+    explicit Mat3x3();
+    virtual ~Mat3x3() = default;
 
 };
 
@@ -22,11 +22,11 @@ template <typename M>
 class Mat4x4
 {
 private:
-	M m[16];
+    M m[16];
 
 public:
-	explicit Mat4x4();
-	virtual ~Mat4x4() = default;
+    explicit Mat4x4();
+    virtual ~Mat4x4() = default;
 
 };
 

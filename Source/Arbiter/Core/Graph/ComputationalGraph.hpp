@@ -12,8 +12,8 @@ class ComputationalGraph : public Graph {
 private:
 protected:
 public:
-	ComputationalGraph();
-	virtual ~ComputationalGraph();
+    ComputationalGraph();
+    virtual ~ComputationalGraph();
 
 };
 

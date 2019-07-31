@@ -9,9 +9,9 @@ class Graph
 private:
 protected:
 public:
-	Graph();
-	virtual ~Graph() = default;
-	
+    Graph();
+    virtual ~Graph() = default;
+
 };
 
 #endif  // __GRAPH_HPP__

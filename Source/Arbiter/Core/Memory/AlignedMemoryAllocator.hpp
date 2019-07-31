@@ -12,8 +12,8 @@ class AlignedMemoryAllocator : public std::allocator<T>
 private:
 protected:
 public:
-	AlignedMemoryAllocator();
-	virtual ~AlignedMemoryAllocator() = default;
+    AlignedMemoryAllocator();
+    virtual ~AlignedMemoryAllocator() = default;
 
 }
 

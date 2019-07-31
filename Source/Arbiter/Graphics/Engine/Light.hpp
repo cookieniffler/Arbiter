@@ -8,10 +8,10 @@ ARBITER_NAMESPACE_BEGIN
 
 class Light : std::enable_shared_from_this<Light> {
 private:
-
+protected:
 public:
-	Light();
-	virtual ~Light() = default;
+    Light();
+    virtual ~Light() = default;
 
 };
 

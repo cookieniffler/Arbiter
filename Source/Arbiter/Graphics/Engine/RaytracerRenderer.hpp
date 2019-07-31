@@ -9,6 +9,7 @@ ARBITER_NAMESPACE_BEGIN
 
 class RaytracerRenderer : public Renderer {
 private:
+protected:
 public:
     RaytracerRenderer();
     virtual ~RaytracerRenderer() = default;

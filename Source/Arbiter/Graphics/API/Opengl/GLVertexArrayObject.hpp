@@ -3,6 +3,7 @@
 #define __VERTEXARRAY_HPP__
 
 #include <Arbiter/Core/Common/Base.hpp>
+#include <Arbiter/Core/Common/StdHeaders.hpp>
 
 ARBITER_NAMESPACE_BEGIN
 OPENGL_NAMESPACE_BEGIN

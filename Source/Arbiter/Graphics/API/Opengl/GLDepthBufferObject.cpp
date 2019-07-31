@@ -1,4 +1,4 @@
-#include <Arbiter/Graphics/API/Opengl/DepthBufferObject.hpp>
+#include <Arbiter/Graphics/API/Opengl/GLDepthBufferObject.hpp>
 
 ARBITER_NAMESPACE_BEGIN
 OPENGL_NAMESPACE_BEGIN

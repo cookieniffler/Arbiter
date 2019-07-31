@@ -5,7 +5,7 @@
 #include <Arbiter/Core/Framework/Application.hpp>
 #include <Arbiter/Graphics/Engine/Camera.hpp>
 #include <Arbiter/Graphics/Engine/RaytracerRenderer.hpp>
-#include <Arbiter/Graphics/API/Opengl/GraphicsApi.hpp>
+#include <Arbiter/Graphics/API/Opengl/GLGraphicsApi.hpp>
 
 class SmokeSimulator : public Arbiter::Application {
 private:

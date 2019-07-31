@@ -1,4 +1,4 @@
-#include <Arbiter/Graphics/API/Opengl/Framebuffer.hpp>
+#include <Arbiter/Graphics/API/Opengl/GLFramebufferObject.hpp>
 
 ARBITER_NAMESPACE_BEGIN
 OPENGL_NAMESPACE_BEGIN

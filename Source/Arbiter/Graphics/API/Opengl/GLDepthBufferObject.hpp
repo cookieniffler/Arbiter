@@ -1,23 +1,24 @@
 #pragma once
-#ifndef __DEPTHBUFFEROBJECT_HPP__
-#define __DEPTHBUFFEROBJECT_HPP__
+#ifndef __GLDEPTHBUFFEROBJECT_HPP__
+#define __GLDEPTHBUFFEROBJECT_HPP__
 
 #include <Arbiter/Core/Common/Base.hpp>
+#include <Arbiter/Core/Common/StdHeaders.hpp>
 
 ARBITER_NAMESPACE_BEGIN
 OPENGL_NAMESPACE_BEGIN
 
-class _Arbiter_Export DepthBufferObject : public std::enable_shared_from_this<DepthBufferObject>
+class _Arbiter_Export GLDepthBufferObject : public std::enable_shared_from_this<GLDepthBufferObject>
 {
 private:
 protected:
 public:
-    DepthBufferObject();
-    virtual ~DepthBufferObject() = default;
+    GLDepthBufferObject();
+    virtual ~GLDepthBufferObject() = default;
 
 };
 
 OPENGL_NAMESPACE_END
 ARBITER_NAMESPACE_END
 
-#endif  // __DEPTHBUFFEROBJECT_HPP__
+#endif  // __GLDEPTHBUFFEROBJECT_HPP__

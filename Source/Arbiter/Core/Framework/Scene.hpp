@@ -3,6 +3,7 @@
 #define __SCENE_HPP__
 
 #include <Arbiter/Core/Common/Base.hpp>
+#include <Arbiter/Core/Common/StdHeaders.hpp>
 #include <Arbiter/Core/Framework/SceneBuffer.hpp>
 #include <Arbiter/Graphics/Engine/Light.hpp>
 

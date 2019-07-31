@@ -79,6 +79,3 @@ elseif (TARGET_PLATFORM_ANDROID)
         set(VULKAN_SUPPORTED TRUE CACHE INTERNAL "Vulkan is supported on Android platform")
     endif()
 endif()
-
-message(STATUS "Platform information : " ${TARGET_PLATFORM} " " ${TARGET_ARCH_NAME})
-message(STATUS "Compiler : " ${CMAKE_CXX_COMPILER_ID})

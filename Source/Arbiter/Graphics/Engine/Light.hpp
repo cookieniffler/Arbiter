@@ -3,6 +3,7 @@
 #define __LIGHT_HPP__
 
 #include <Arbiter/Core/Common/Base.hpp>
+#include <Arbiter/Core/Common/StdHeaders.hpp>
 
 ARBITER_NAMESPACE_BEGIN
 

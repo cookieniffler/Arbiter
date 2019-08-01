@@ -23,20 +23,6 @@ arbiter_add_sources(
     Graph/ComputationalGraph.hpp
     Graph/ComputationalGraph.cpp
     Logger/Logger.hpp
-    Math/Autodiff/AutomaticDifferentiation.hpp
-    Math/Autodiff/ForwardModeAD.hpp
-    Math/Autodiff/ReverseModeAD.hpp
-    Math/Geometry/Geometry.hpp
-    Math/Kernels/Kernel.hpp
-    Math/LinearAlgebra/Angle.hpp
-    Math/LinearAlgebra/CholeskyDecomposition.hpp
-    Math/LinearAlgebra/Complex.hpp
-    Math/LinearAlgebra/DenseMatrix.hpp
-    Math/LinearAlgebra/Matrix.hpp
-    Math/LinearAlgebra/NaiveGaussianElimination.hpp
-    Math/LinearAlgebra/Quaternion.hpp
-    Math/LinearAlgebra/SparseMatrix.hpp
-    Math/LinearAlgebra/Vector.hpp
     Memory/AlignedMemory.hpp
     Parser/Parser.hpp
     Threading/Threading.hpp

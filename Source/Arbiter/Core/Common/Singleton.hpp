@@ -9,6 +9,7 @@ ARBITER_NAMESPACE_BEGIN
 template<typename T>
 class Singleton {
 private:
+    Singleton();
     Singleton(const Singleton<T>&);
     Singleton& operator=(const Singleton<T>&);
 protected:

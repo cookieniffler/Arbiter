@@ -5,6 +5,15 @@
 
 ARBITER_NAMESPACE_BEGIN
 
+class Exception : public std::exception {
+private:
+protected:
+public:
+    Exception();
+    virtual ~Exception() = default;
+
+};
+
 ARBITER_NAMESPACE_END
 
 #endif  // __EXCEPTION_HPP__
